@@ -1,21 +1,15 @@
-# Archivio Dialogico
+# Conversazioni con Libera
 
-Sito statico HTML/CSS/JS progettato come archivio editoriale.
+Archivio statico delle conversazioni fra **gbprof** e **Libera**.
 
-## Stato di questa versione
-Questa build contiene:
-- homepage completa
-- design grafico coerente e suggestivo
-- filtri per forma/tema/anno
-- pagine dedicate per ogni documento individuato nella cartella Drive
-- due testi già ricostruiti con contenuto esteso:
-  - La costruzione di miti e simboli
-  - Saggio AI per l’umano
+## Contenuto
 
-Le altre pagine sono predisposte come nodi archivistici e possono essere completate con la trascrizione integrale dei documenti restanti.
+- 31 conversazioni catalogate dal 2023 al 2026
+- 24 testi integrali importati dai documenti originali
+- 7 schede conservate dal vecchio archivio, in attesa del testo originale
+- ricerca, filtri per anno e tema, ordinamento e pagine di lettura dedicate
+- tema chiaro/scuro, dimensione del testo regolabile, stampa e copia del collegamento
 
-## Apertura
-Apri `index.html` in un browser.
+Il file `dati/import-report.json` documenta il confronto fra il vecchio sito e i documenti forniti. Lo script `tools/build_archive.py` rende ripetibile l’importazione di futuri documenti Word.
 
-## Pubblicazione
-Può essere pubblicato direttamente su GitHub Pages.
+Il sito è progettato per GitHub Pages e non richiede compilazione.

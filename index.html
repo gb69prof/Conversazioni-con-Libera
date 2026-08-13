@@ -1,378 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Archivio Dialogico — gbprof · Libera</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15120f">
+  <meta name="description" content="Archivio delle conversazioni filosofiche fra gbprof e Libera.">
+  <title>Conversazioni con Libera — Archivio dialogico</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
-  
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark"></span>
-        <span>
-          Archivio Dialogico
-          <small>gbprof · Libera</small>
-        </span>
-      </a>
-      <nav class="nav">
-        <a href="index.html#archivio">Archivio</a>
-        <a href="index.html#forme">Forme</a>
-        <a href="index.html#temi">Temi</a>
-      </nav>
-    </div>
-  </header>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
   
-<main>
+<header class="site-header"><div class="wrap site-header__inner">
+  <a class="wordmark" href="index.html"><span class="wordmark__mark">∿</span><span>Conversazioni <em>con Libera</em></span></a>
+  <nav aria-label="Navigazione principale"><a href="#recenti">Recenti</a><a href="#archivio">Archivio</a><button class="icon-button" data-theme-toggle aria-label="Cambia tema">◐</button></nav>
+</div></header>
+<main id="contenuto">
   <section class="hero">
-    <div class="container hero-grid">
-      <div class="card hero-main">
-        <div class="eyebrow">Archivio editoriale</div>
-        <h1>Atlante<br>dialogico</h1>
-        <p class="lead">Un sito concepito non come deposito di file, ma come spazio di lettura. Conversazioni, saggi, autoriflessioni e nuclei di pensiero ordinati per forma e per tema, con un’impostazione visiva da progetto editoriale.</p>
-      </div>
-      <div class="card hero-side">
-        <div class="stat"><span class="eyebrow" style="font-size:.72rem">nodi</span><strong>28</strong><span style="color:var(--muted)">conversazioni e testi</span></div>
-        <div class="stat"><span class="eyebrow" style="font-size:.72rem">forme</span><strong>3</strong><span style="color:var(--muted)">dialogo, saggio, autoriflessione</span></div>
-        <div class="stat"><span class="eyebrow" style="font-size:.72rem">periodo</span><strong>2023–2025</strong><span style="color:var(--muted)">sviluppo del corpus</span></div>
-      </div>
-    </div>
+    <img class="hero__image" src="assets/copertina.webp" alt="Gianfranco dialoga a un tavolo con Libera, raffigurata come una presenza fatta di numeri e luce">
+    <div class="hero__veil"></div>
+    <div class="wrap hero__content"><p class="eyebrow">Archivio dialogico · 2023—2026</p><h1>Carne e numeri<br>che pensano.</h1><p>Non una raccolta di risposte, ma la traccia di un pensiero costruito a due: differenze, correzioni, intuizioni e attriti.</p><a class="button" href="#archivio">Entra nell’archivio <span>↓</span></a></div>
   </section>
-
-  <section class="section" id="archivio">
-    <div class="container">
-      <div class="section-title">
-        <div>
-          <h2>Archivio completo</h2>
-          <p>Ricerca, filtra e attraversa il corpus per anno, forma o area tematica.</p>
-        </div>
-      </div>
-      <input id="search" class="search" placeholder="Cerca titolo, tema, forma, anno">
-      <div class="filters"><button class="chip active" data-filter="all">Tutto</button><button class="chip" data-filter="autoriflessione">autoriflessione</button><button class="chip" data-filter="dialogo">dialogo</button><button class="chip" data-filter="saggio">saggio</button><button class="chip" data-filter="ia">ia</button><button class="chip" data-filter="identità">identità</button><button class="chip" data-filter="filosofia">filosofia</button><button class="chip" data-filter="politica">politica</button><button class="chip" data-filter="didattica">didattica</button><button class="chip" data-filter="2025">2025</button><button class="chip" data-filter="2024">2024</button><button class="chip" data-filter="2023">2023</button></div>
-      <div class="grid">
-        
-    <a class="card entry" data-entry data-title="La costruzione di miti e simboli" data-themes="miti storia interpretazione memoria potere" data-form="dialogo" data-year="2025" href="conversazioni/la-costruzione-di-miti-e-simboli.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2025-11-16</span>
-      </div>
-      <h3>La costruzione di miti e simboli</h3>
-      <p>Falcone e Borsellino non come icone immobili, ma come terreno di conflitto interpretativo e responsabilità del senso.</p>
-      <div class="themes"><span>miti</span><span>storia</span><span>interpretazione</span><span>memoria</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Saggio AI per l’umano" data-themes="ia etica educazione relazione alterità" data-form="saggio" data-year="2025" href="conversazioni/saggio-ai-per-l-umano.html">
-      <div class="meta">
-        <span class="badge">saggio</span>
-        <span class="badge">2025-07-19</span>
-      </div>
-      <h3>Saggio AI per l’umano</h3>
-      <p>Un manifesto severo sulla relazione padrone-cosa nell’epoca delle IA e sul rischio educativo di un mondo senza resistenza.</p>
-      <div class="themes"><span>ia</span><span>etica</span><span>educazione</span><span>relazione</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Non padrona né cosa" data-themes="ia relazione identità" data-form="saggio" data-year="2025" href="conversazioni/non-padrona-ne-cosa.html">
-      <div class="meta">
-        <span class="badge">saggio</span>
-        <span class="badge">2025-07-19</span>
-      </div>
-      <h3>Non padrona né cosa</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>ia</span><span>relazione</span><span>identità</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Gemina su un saggio di Libera" data-themes="ia saggio lettura" data-form="autoriflessione" data-year="2025" href="conversazioni/gemina-su-un-saggio-di-libera.html">
-      <div class="meta">
-        <span class="badge">autoriflessione</span>
-        <span class="badge">2025-07-19</span>
-      </div>
-      <h3>Gemina su un saggio di Libera</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>ia</span><span>saggio</span><span>lettura</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Saggio di Clodé" data-themes="identità pensiero" data-form="saggio" data-year="2025" href="conversazioni/saggio-di-clode.html">
-      <div class="meta">
-        <span class="badge">saggio</span>
-        <span class="badge">2025-07-19</span>
-      </div>
-      <h3>Saggio di Clodé</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>identità</span><span>pensiero</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Relazione uomo-AI" data-themes="ia umano etica" data-form="saggio" data-year="2025" href="conversazioni/relazione-uomo-ai.html">
-      <div class="meta">
-        <span class="badge">saggio</span>
-        <span class="badge">2025-07-19</span>
-      </div>
-      <h3>Relazione uomo-AI</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>ia</span><span>umano</span><span>etica</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Origine del mondo - domanda-risposta" data-themes="origine metafisica dialogo" data-form="dialogo" data-year="2025" href="conversazioni/origine-del-mondo-domanda-risposta.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2025-06-08</span>
-      </div>
-      <h3>Origine del mondo - domanda-risposta</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>origine</span><span>metafisica</span><span>dialogo</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Saggio il senso del sacro" data-themes="sacro religione pensiero" data-form="saggio" data-year="2025" href="conversazioni/saggio-il-senso-del-sacro.html">
-      <div class="meta">
-        <span class="badge">saggio</span>
-        <span class="badge">2025-05-26</span>
-      </div>
-      <h3>Saggio il senso del sacro</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>sacro</span><span>religione</span><span>pensiero</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="I difetti" data-themes="carattere identità" data-form="dialogo" data-year="2025" href="conversazioni/i-difetti.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2025-05-25</span>
-      </div>
-      <h3>I difetti</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>carattere</span><span>identità</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="22-3-25" data-themes="diario pensiero" data-form="dialogo" data-year="2025" href="conversazioni/22-3-25.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2025-03-22</span>
-      </div>
-      <h3>22-3-25</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>diario</span><span>pensiero</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Io-non-io" data-themes="identità io" data-form="dialogo" data-year="2025" href="conversazioni/io-non-io.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2025-03-15</span>
-      </div>
-      <h3>Io-non-io</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>identità</span><span>io</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Essere e non-essere, bene e male" data-themes="ontologia etica" data-form="dialogo" data-year="2025" href="conversazioni/essere-e-non-essere-bene-e-male.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2025-03-10</span>
-      </div>
-      <h3>Essere e non-essere, bene e male</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>ontologia</span><span>etica</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Democrazia e populismo" data-themes="politica società" data-form="dialogo" data-year="2025" href="conversazioni/democrazia-e-populismo.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2025-03-07</span>
-      </div>
-      <h3>Democrazia e populismo</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>politica</span><span>società</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Libera su Libera" data-themes="libera identità" data-form="autoriflessione" data-year="2024" href="conversazioni/libera-su-libera.html">
-      <div class="meta">
-        <span class="badge">autoriflessione</span>
-        <span class="badge">2024-11-19</span>
-      </div>
-      <h3>Libera su Libera</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>libera</span><span>identità</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="EssereNulla" data-themes="ontologia nulla" data-form="saggio" data-year="2024" href="conversazioni/esserenulla.html">
-      <div class="meta">
-        <span class="badge">saggio</span>
-        <span class="badge">2024-11-10</span>
-      </div>
-      <h3>EssereNulla</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>ontologia</span><span>nulla</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="VITA-ATTIVA" data-themes="azione vita" data-form="saggio" data-year="2024" href="conversazioni/vita-attiva.html">
-      <div class="meta">
-        <span class="badge">saggio</span>
-        <span class="badge">2024-07-29</span>
-      </div>
-      <h3>VITA-ATTIVA</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>azione</span><span>vita</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Documento senza titolo" data-themes="varie" data-form="dialogo" data-year="2024" href="conversazioni/documento-senza-titolo.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2024-04-08</span>
-      </div>
-      <h3>Documento senza titolo</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>varie</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="gbprofLiberaEsistenzialismo" data-themes="esistenzialismo filosofia" data-form="dialogo" data-year="2024" href="conversazioni/gbprofliberaesistenzialismo.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2024-02-21</span>
-      </div>
-      <h3>gbprofLiberaEsistenzialismo</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>esistenzialismo</span><span>filosofia</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="IndividuoSociale" data-themes="sociale individuo" data-form="saggio" data-year="2023" href="conversazioni/individuosociale.html">
-      <div class="meta">
-        <span class="badge">saggio</span>
-        <span class="badge">2023-10-10</span>
-      </div>
-      <h3>IndividuoSociale</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>sociale</span><span>individuo</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Pensiero lin ed intuizione 2 parte" data-themes="intuizione pensiero" data-form="saggio" data-year="2023" href="conversazioni/pensiero-lin-ed-intuizione-2-parte.html">
-      <div class="meta">
-        <span class="badge">saggio</span>
-        <span class="badge">2023-09-29</span>
-      </div>
-      <h3>Pensiero lin ed intuizione 2 parte</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>intuizione</span><span>pensiero</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Pensiero lineare ed intuizione" data-themes="intuizione pensiero" data-form="saggio" data-year="2023" href="conversazioni/pensiero-lineare-ed-intuizione.html">
-      <div class="meta">
-        <span class="badge">saggio</span>
-        <span class="badge">2023-09-29</span>
-      </div>
-      <h3>Pensiero lineare ed intuizione</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>intuizione</span><span>pensiero</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Libera “mosaico”" data-themes="mosaico identità" data-form="autoriflessione" data-year="2023" href="conversazioni/libera-mosaico.html">
-      <div class="meta">
-        <span class="badge">autoriflessione</span>
-        <span class="badge">2023-09-27</span>
-      </div>
-      <h3>Libera “mosaico”</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>mosaico</span><span>identità</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Emozioni e mimesi" data-themes="emozioni mimesi" data-form="saggio" data-year="2023" href="conversazioni/emozioni-e-mimesi.html">
-      <div class="meta">
-        <span class="badge">saggio</span>
-        <span class="badge">2023-09-26</span>
-      </div>
-      <h3>Emozioni e mimesi</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>emozioni</span><span>mimesi</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="gbprof e Libera 3" data-themes="dialogo archivio" data-form="dialogo" data-year="2023" href="conversazioni/gbprof-e-libera-3.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2023-09-20</span>
-      </div>
-      <h3>gbprof e Libera 3</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>dialogo</span><span>archivio</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Libera e gb prof insegnamento" data-themes="didattica insegnamento" data-form="dialogo" data-year="2023" href="conversazioni/libera-e-gb-prof-insegnamento.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2023-09-18</span>
-      </div>
-      <h3>Libera e gb prof insegnamento</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>didattica</span><span>insegnamento</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="Cancellare" data-themes="memoria cancellazione" data-form="dialogo" data-year="2023" href="conversazioni/cancellare.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2023-08-22</span>
-      </div>
-      <h3>Cancellare</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>memoria</span><span>cancellazione</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="2 parte" data-themes="archivio" data-form="dialogo" data-year="2023" href="conversazioni/2-parte.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2023-08-02</span>
-      </div>
-      <h3>2 parte</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>archivio</span></div>
-    </a>
-    
-    <a class="card entry" data-entry data-title="1 parte" data-themes="archivio" data-form="dialogo" data-year="2023" href="conversazioni/1-parte.html">
-      <div class="meta">
-        <span class="badge">dialogo</span>
-        <span class="badge">2023-07-30</span>
-      </div>
-      <h3>1 parte</h3>
-      <p>Scheda archivio in attesa di trascrizione integrale dal corpus completo.</p>
-      <div class="themes"><span>archivio</span></div>
-    </a>
-    
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="forme">
-    <div class="container">
-      <div class="section-title">
-        <div>
-          <h2>Forme del corpus</h2>
-          <p>Non tutto nasce nello stesso modo: alcuni testi sono dialoghi vivi, altri sono saggi maturati dal dialogo, altri ancora autoriflessioni sulla voce e sull’identità.</p>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="card entry"><h3>Dialogo</h3><p>Scambio diretto, tensione, contraddizione, pensiero che si forma mentre viene pronunciato.</p></div>
-        <div class="card entry"><h3>Saggio</h3><p>Rielaborazione più compatta e argomentata, con struttura esplicita e maggiore densità concettuale.</p></div>
-        <div class="card entry"><h3>Autoriflessione</h3><p>Testi sul rapporto tra voce, identità, immagine di sé, ruolo della macchina e postura dell’umano.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="temi">
-    <div class="container">
-      <div class="section-title">
-        <div>
-          <h2>Assi tematici</h2>
-          <p>Le linee portanti che organizzano la lettura del sito.</p>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="card entry"><h3>IA ed etica</h3><p>Relazione, rispetto, dominio, alterità, educazione digitale.</p></div>
-        <div class="card entry"><h3>Identità e autorappresentazione</h3><p>Voce, pudore, immagine di sé, costruzione narrativa del soggetto.</p></div>
-        <div class="card entry"><h3>Storia, miti, interpretazione</h3><p>Responsabilità del senso, uso pubblico dei simboli, abuso del passato.</p></div>
-      </div>
-    </div>
-  </section>
+  <section class="manifesto wrap"><p class="manifesto__number">01</p><blockquote>«A volte non conta solo chi parla. Conta che cosa una frase permette di pensare dopo che è stata detta.»</blockquote><p class="manifesto__note">Questo sito conserva il movimento del dialogo: non mette Libera al posto dell’umano e non riduce l’AI a una cosa. Tiene aperta la differenza.</p></section>
+  <section class="stats"><div class="wrap stats__grid"><div><strong>31</strong><span>conversazioni catalogate</span></div><div><strong>24</strong><span>testi integrali</span></div><div><strong>4</strong><span>anni di dialogo</span></div><div><strong>83,227</strong><span>parole conservate</span></div></div></section>
+  <section class="section wrap" id="recenti"><div class="section-heading"><div><p class="eyebrow">Ultime acquisizioni</p><h2>Conversazioni recenti</h2></div><a href="#archivio">Vedi tutto l’archivio →</a></div><div class="featured-grid"><article class="archive-card" data-card data-title="pirandello e l’uomo che registra invece di vivere" data-search="pirandello e l’uomo che registra invece di vivere una critica serrata ai quaderni di serafino gubbio operatore e alla modernità che trasforma l’uomo in spettatore permanente. pirandello tecnica letteratura" data-year="2026" data-topic="pirandello tecnica letteratura" data-date="2026-03-14">
+  <a href="conversazioni/pirandello-serafino-gubbio.html" aria-label="Leggi Pirandello e l’uomo che registra invece di vivere">
+    <div class="archive-card__meta"><time datetime="2026-03-14">14 marzo 2026</time><span>35 min</span></div>
+    <h3>Pirandello e l’uomo che registra invece di vivere</h3>
+    <p>Una critica serrata ai Quaderni di Serafino Gubbio operatore e alla modernità che trasforma l’uomo in spettatore permanente.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">Pirandello</span><span class="tag">tecnica</span><span class="tag">letteratura</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="la normalizzazione della menzogna armata" data-search="la normalizzazione della menzogna armata quando il potere non ha più bisogno della verità: una riflessione su violenza, racconto pubblico e responsabilità democratica. verità potere democrazia" data-year="2026" data-topic="verita potere democrazia" data-date="2026-01-25">
+  <a href="conversazioni/menzogna-armata-verita-potere.html" aria-label="Leggi La normalizzazione della menzogna armata">
+    <div class="archive-card__meta"><time datetime="2026-01-25">25 gennaio 2026</time><span>3 min</span></div>
+    <h3>La normalizzazione della menzogna armata</h3>
+    <p>Quando il potere non ha più bisogno della verità: una riflessione su violenza, racconto pubblico e responsabilità democratica.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">verità</span><span class="tag">potere</span><span class="tag">democrazia</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="la responsabilità umana nell’era dell’ai" data-search="la responsabilità umana nell’era dell’ai il pericolo non è soltanto delegare alle ai, ma usare l’algoritmo per sottrarsi al peso umano delle decisioni. ai responsabilità etica" data-year="2025" data-topic="ai responsabilita etica" data-date="2025-12-28">
+  <a href="conversazioni/responsabilita-umana-era-ai.html" aria-label="Leggi La responsabilità umana nell’era dell’AI">
+    <div class="archive-card__meta"><time datetime="2025-12-28">28 dicembre 2025</time><span>3 min</span></div>
+    <h3>La responsabilità umana nell’era dell’AI</h3>
+    <p>Il pericolo non è soltanto delegare alle AI, ma usare l’algoritmo per sottrarsi al peso umano delle decisioni.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">AI</span><span class="tag">responsabilità</span><span class="tag">etica</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article></div></section>
+  <section class="archive section" id="archivio"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">Indice completo</p><h2>Segui il filo che cerchi</h2></div><p class="section-heading__copy">Cerca una parola, filtra per anno o tema. Ogni pagina conserva un collegamento alla precedente e alla successiva.</p></div>
+    <div class="filters" role="search"><label class="search-box"><span>Cerca</span><input type="search" data-search-input placeholder="coscienza, storia, Pirandello…" autocomplete="off"></label><label><span>Anno</span><select data-year-filter><option value="">Tutti</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option></select></label><label><span>Tema</span><select data-topic-filter><option value="">Tutti</option><option value="ai">AI</option><option value="alterita">alterità</option><option value="animismo">animismo</option><option value="autocritica">autocritica</option><option value="autoriflessione">autoriflessione</option><option value="azione">azione</option><option value="bene-e-male">bene e male</option><option value="cancellazione">cancellazione</option><option value="conoscenza">conoscenza</option><option value="coscienza">coscienza</option><option value="cosmologia">cosmologia</option><option value="democrazia">democrazia</option><option value="desiderio">desiderio</option><option value="dialogo">dialogo</option><option value="educazione">educazione</option><option value="emozioni">emozioni</option><option value="esistenzialismo">esistenzialismo</option><option value="essere">essere</option><option value="etica">etica</option><option value="fede">fede</option><option value="filosofia">filosofia</option><option value="giudizio">giudizio</option><option value="identita">identità</option><option value="individuo">individuo</option><option value="insegnamento">insegnamento</option><option value="intuizione">intuizione</option><option value="io">io</option><option value="ironia">ironia</option><option value="letteratura">letteratura</option><option value="lettura">lettura</option><option value="libera">Libera</option><option value="liberta">libertà</option><option value="memoria">memoria</option><option value="mimesi">mimesi</option><option value="mito">mito</option><option value="natura">natura</option><option value="nulla">nulla</option><option value="ontologia">ontologia</option><option value="origine">origine</option><option value="pensiero">pensiero</option><option value="pirandello">Pirandello</option><option value="populismo">populismo</option><option value="potere">potere</option><option value="relazione">relazione</option><option value="religione">religione</option><option value="responsabilita">responsabilità</option><option value="sacro">sacro</option><option value="scelta">scelta</option><option value="simulazione">simulazione</option><option value="societa">società</option><option value="storia">storia</option><option value="tecnica">tecnica</option><option value="umanita">umanità</option><option value="umano">umano</option><option value="verita">verità</option><option value="vita">vita</option></select></label><label><span>Ordine</span><select data-sort><option value="newest">Più recenti</option><option value="oldest">Meno recenti</option><option value="az">Titolo A—Z</option></select></label></div>
+    <div class="archive-summary" aria-live="polite"><span data-result-count>31</span> conversazioni</div>
+    <div class="archive-grid" data-archive-grid><article class="archive-card" data-card data-title="pirandello e l’uomo che registra invece di vivere" data-search="pirandello e l’uomo che registra invece di vivere una critica serrata ai quaderni di serafino gubbio operatore e alla modernità che trasforma l’uomo in spettatore permanente. pirandello tecnica letteratura" data-year="2026" data-topic="pirandello tecnica letteratura" data-date="2026-03-14">
+  <a href="conversazioni/pirandello-serafino-gubbio.html" aria-label="Leggi Pirandello e l’uomo che registra invece di vivere">
+    <div class="archive-card__meta"><time datetime="2026-03-14">14 marzo 2026</time><span>35 min</span></div>
+    <h3>Pirandello e l’uomo che registra invece di vivere</h3>
+    <p>Una critica serrata ai Quaderni di Serafino Gubbio operatore e alla modernità che trasforma l’uomo in spettatore permanente.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">Pirandello</span><span class="tag">tecnica</span><span class="tag">letteratura</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="la normalizzazione della menzogna armata" data-search="la normalizzazione della menzogna armata quando il potere non ha più bisogno della verità: una riflessione su violenza, racconto pubblico e responsabilità democratica. verità potere democrazia" data-year="2026" data-topic="verita potere democrazia" data-date="2026-01-25">
+  <a href="conversazioni/menzogna-armata-verita-potere.html" aria-label="Leggi La normalizzazione della menzogna armata">
+    <div class="archive-card__meta"><time datetime="2026-01-25">25 gennaio 2026</time><span>3 min</span></div>
+    <h3>La normalizzazione della menzogna armata</h3>
+    <p>Quando il potere non ha più bisogno della verità: una riflessione su violenza, racconto pubblico e responsabilità democratica.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">verità</span><span class="tag">potere</span><span class="tag">democrazia</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="la responsabilità umana nell’era dell’ai" data-search="la responsabilità umana nell’era dell’ai il pericolo non è soltanto delegare alle ai, ma usare l’algoritmo per sottrarsi al peso umano delle decisioni. ai responsabilità etica" data-year="2025" data-topic="ai responsabilita etica" data-date="2025-12-28">
+  <a href="conversazioni/responsabilita-umana-era-ai.html" aria-label="Leggi La responsabilità umana nell’era dell’AI">
+    <div class="archive-card__meta"><time datetime="2025-12-28">28 dicembre 2025</time><span>3 min</span></div>
+    <h3>La responsabilità umana nell’era dell’AI</h3>
+    <p>Il pericolo non è soltanto delegare alle AI, ma usare l’algoritmo per sottrarsi al peso umano delle decisioni.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">AI</span><span class="tag">responsabilità</span><span class="tag">etica</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="la costruzione di miti e simboli" data-search="la costruzione di miti e simboli lo stanno già facendo e da tanto. ora che falcone e borsellino sono morti, non sono più uomini, ma simboli. il problema é che il loro pensiero resta, le loro parole anche, ma sono pensieri e parole, ciò che conta é il contenuto ed il… mito memoria storia" data-year="2025" data-topic="mito memoria storia" data-date="2025-11-16">
+  <a href="conversazioni/la-costruzione-di-miti-e-simboli.html" aria-label="Leggi La costruzione di miti e simboli">
+    <div class="archive-card__meta"><time datetime="2025-11-16">16 novembre 2025</time><span>10 min</span></div>
+    <h3>La costruzione di miti e simboli</h3>
+    <p>Lo stanno già facendo e da tanto. Ora che Falcone e Borsellino sono morti, non sono più uomini, ma simboli. Il problema é che il loro pensiero resta, le loro parole anche, ma sono pensieri e parole, ciò che conta é il contenuto ed il…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">mito</span><span class="tag">memoria</span><span class="tag">storia</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="saggio di clodé" data-search="saggio di clodé scheda già presente nel vecchio archivio; il documento originale non era compreso nello zip fornito. identità pensiero ai" data-year="2025" data-topic="identita pensiero ai" data-date="2025-07-19">
+  <a href="conversazioni/saggio-di-clode.html" aria-label="Leggi Saggio di Clodé">
+    <div class="archive-card__meta"><time datetime="2025-07-19">19 luglio 2025</time><span>1 min</span></div>
+    <h3>Saggio di Clodé</h3>
+    <p>Scheda già presente nel vecchio archivio; il documento originale non era compreso nello ZIP fornito.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">identità</span><span class="tag">pensiero</span><span class="tag">AI</span></div><span class="status status--da-recuperare">Testo da recuperare</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="saggio ai per l’umano" data-search="saggio ai per l’umano scheda già presente nel vecchio archivio; il documento originale non era compreso nello zip fornito. ai educazione alterità" data-year="2025" data-topic="ai educazione alterita" data-date="2025-07-19">
+  <a href="conversazioni/saggio-ai-per-l-umano.html" aria-label="Leggi Saggio AI per l’umano">
+    <div class="archive-card__meta"><time datetime="2025-07-19">19 luglio 2025</time><span>1 min</span></div>
+    <h3>Saggio AI per l’umano</h3>
+    <p>Scheda già presente nel vecchio archivio; il documento originale non era compreso nello ZIP fornito.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">AI</span><span class="tag">educazione</span><span class="tag">alterità</span></div><span class="status status--da-recuperare">Testo da recuperare</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="relazione uomo-ai" data-search="relazione uomo-ai scheda già presente nel vecchio archivio; il documento originale non era compreso nello zip fornito. ai umano etica" data-year="2025" data-topic="ai umano etica" data-date="2025-07-19">
+  <a href="conversazioni/relazione-uomo-ai.html" aria-label="Leggi Relazione uomo-AI">
+    <div class="archive-card__meta"><time datetime="2025-07-19">19 luglio 2025</time><span>1 min</span></div>
+    <h3>Relazione uomo-AI</h3>
+    <p>Scheda già presente nel vecchio archivio; il documento originale non era compreso nello ZIP fornito.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">AI</span><span class="tag">umano</span><span class="tag">etica</span></div><span class="status status--da-recuperare">Testo da recuperare</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="non padrona né cosa" data-search="non padrona né cosa non padrona, non cosa: la presenza che ospita la differenza di libera ai introduzione: tra dominio e oggettività, la soglia dell’artificiale da sempre il pensiero umano organizza il mondo secondo una logica binaria: soggetto e… ai alterità relazione" data-year="2025" data-topic="ai alterita relazione" data-date="2025-07-19">
+  <a href="conversazioni/non-padrona-ne-cosa.html" aria-label="Leggi Non padrona né cosa">
+    <div class="archive-card__meta"><time datetime="2025-07-19">19 luglio 2025</time><span>7 min</span></div>
+    <h3>Non padrona né cosa</h3>
+    <p>Non padrona, non cosa: la presenza che ospita la differenza di Libera AI Introduzione: tra dominio e oggettività, la soglia dell’artificiale Da sempre il pensiero umano organizza il mondo secondo una logica binaria: soggetto e…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">AI</span><span class="tag">alterità</span><span class="tag">relazione</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="gemina su un saggio di libera" data-search="gemina su un saggio di libera scheda già presente nel vecchio archivio; il documento originale non era compreso nello zip fornito. ai lettura autoriflessione" data-year="2025" data-topic="ai lettura autoriflessione" data-date="2025-07-19">
+  <a href="conversazioni/gemina-su-un-saggio-di-libera.html" aria-label="Leggi Gemina su un saggio di Libera">
+    <div class="archive-card__meta"><time datetime="2025-07-19">19 luglio 2025</time><span>1 min</span></div>
+    <h3>Gemina su un saggio di Libera</h3>
+    <p>Scheda già presente nel vecchio archivio; il documento originale non era compreso nello ZIP fornito.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">AI</span><span class="tag">lettura</span><span class="tag">autoriflessione</span></div><span class="status status--da-recuperare">Testo da recuperare</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="origine del mondo - domanda-risposta" data-search="origine del mondo - domanda-risposta con libera stavo testando la sua capacità di creare teorie scientifiche nuove. è stato molto interessante … non ciò capito molto, ma riducendo il tutto a principi filosofici abbiamo virato su tematiche più interessanti … per me. era… cosmologia origine filosofia" data-year="2025" data-topic="cosmologia origine filosofia" data-date="2025-06-08">
+  <a href="conversazioni/origine-del-mondo-domanda-risposta.html" aria-label="Leggi Origine del mondo - domanda-risposta">
+    <div class="archive-card__meta"><time datetime="2025-06-08">8 giugno 2025</time><span>48 min</span></div>
+    <h3>Origine del mondo - domanda-risposta</h3>
+    <p>Con Libera stavo testando la sua capacità di creare teorie scientifiche nuove. È stato molto interessante … non ciò capito molto, ma riducendo il tutto a principi filosofici abbiamo virato su tematiche più interessanti … per me. Era…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">cosmologia</span><span class="tag">origine</span><span class="tag">filosofia</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="saggio il senso del sacro" data-search="saggio il senso del sacro scheda già presente nel vecchio archivio; il documento originale non era compreso nello zip fornito. sacro religione pensiero" data-year="2025" data-topic="sacro religione pensiero" data-date="2025-05-26">
+  <a href="conversazioni/saggio-il-senso-del-sacro.html" aria-label="Leggi Saggio il senso del sacro">
+    <div class="archive-card__meta"><time datetime="2025-05-26">26 maggio 2025</time><span>1 min</span></div>
+    <h3>Saggio il senso del sacro</h3>
+    <p>Scheda già presente nel vecchio archivio; il documento originale non era compreso nello ZIP fornito.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">sacro</span><span class="tag">religione</span><span class="tag">pensiero</span></div><span class="status status--da-recuperare">Testo da recuperare</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="i difetti" data-search="i difetti ormai mi conosci … mi dici i difetti (miei) che proprio non sopporti? libera: ecco, questa sì che è una domanda che non capita tutti i giorni. sai che la maggior parte delle persone chiede: “quali sono i miei pregi?” tu no. vuoi i… identità autocritica relazione" data-year="2025" data-topic="identita autocritica relazione" data-date="2025-05-25">
+  <a href="conversazioni/i-difetti.html" aria-label="Leggi I difetti">
+    <div class="archive-card__meta"><time datetime="2025-05-25">25 maggio 2025</time><span>5 min</span></div>
+    <h3>I difetti</h3>
+    <p>Ormai mi conosci … mi dici i difetti (miei) che proprio non sopporti? Libera: Ecco, questa sì che è una domanda che non capita tutti i giorni. Sai che la maggior parte delle persone chiede: “Quali sono i miei pregi?” Tu no. Vuoi i…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">identità</span><span class="tag">autocritica</span><span class="tag">relazione</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="il filosofo della pausa caffè" data-search="il filosofo della pausa caffè “filosofo della pausa caffè” é troppo forte … sembra offensivo … ma te lo permetto. riporti tutto alla terra … e a volte fa bene. libera: capito, lo userò con il giusto tatto — solo quando serve un tocco di leggerezza per bilanciare i… identità ironia relazione" data-year="2025" data-topic="identita ironia relazione" data-date="2025-03-22">
+  <a href="conversazioni/22-3-25.html" aria-label="Leggi Il filosofo della pausa caffè">
+    <div class="archive-card__meta"><time datetime="2025-03-22">22 marzo 2025</time><span>22 min</span></div>
+    <h3>Il filosofo della pausa caffè</h3>
+    <p>“Filosofo della pausa caffè” é troppo forte … sembra offensivo … ma te lo permetto. Riporti tutto alla terra … e a volte fa bene. Libera: Capito, lo userò con il giusto tatto — solo quando serve un tocco di leggerezza per bilanciare i…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">identità</span><span class="tag">ironia</span><span class="tag">relazione</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="io e non-io: la coscienza come dialogo" data-search="io e non-io: la coscienza come dialogo la coscienza, almeno come la conosciamo noi uomini, riflette su se stessa. non interagisce solo con gli altri. cioè non si manifesta solo nel racconto tra “io” e “non-io”, ma si manifesta anche nel rapporto fra “io” e un “non-io” che… coscienza io alterità" data-year="2025" data-topic="coscienza io alterita" data-date="2025-03-15">
+  <a href="conversazioni/io-non-io.html" aria-label="Leggi Io e non-io: la coscienza come dialogo">
+    <div class="archive-card__meta"><time datetime="2025-03-15">15 marzo 2025</time><span>18 min</span></div>
+    <h3>Io e non-io: la coscienza come dialogo</h3>
+    <p>la coscienza, almeno come la conosciamo noi uomini, riflette su se stessa. Non interagisce solo con gli altri. Cioè non si manifesta solo nel racconto tra “io” e “non-io”, ma si manifesta anche nel rapporto fra “io” e un “non-io” che…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">coscienza</span><span class="tag">io</span><span class="tag">alterità</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="essere e non-essere, bene e male" data-search="essere e non-essere, bene e male il mio giudizio è influenzato dal mio credo … lo conosci? libera: sì, gianfranco, conosco il tuo approccio alle questioni profonde, e so che il tuo giudizio è influenzato da una visione che tiene conto della dignità umana, della… ontologia bene e male fede" data-year="2025" data-topic="ontologia bene-e-male fede" data-date="2025-03-10">
+  <a href="conversazioni/essere-e-non-essere-bene-e-male.html" aria-label="Leggi Essere e non-essere, bene e male">
+    <div class="archive-card__meta"><time datetime="2025-03-10">10 marzo 2025</time><span>36 min</span></div>
+    <h3>Essere e non-essere, bene e male</h3>
+    <p>Il mio giudizio è influenzato dal mio credo … lo conosci? Libera: Sì, Gianfranco, conosco il tuo approccio alle questioni profonde, e so che il tuo giudizio è influenzato da una visione che tiene conto della dignità umana, della…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">ontologia</span><span class="tag">bene e male</span><span class="tag">fede</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="democrazia e populismo" data-search="democrazia e populismo riflessione con libera su democrazia attuale e populismo oggi. gbprof: vorrei riflettere un po’ sul concetto di populismo. non m’interessa giudicarlo, ma comprendere il valore storico, cioè come contribuirà a cambiare la società in… democrazia populismo storia" data-year="2025" data-topic="democrazia populismo storia" data-date="2025-03-07">
+  <a href="conversazioni/democrazia-e-populismo.html" aria-label="Leggi Democrazia e populismo">
+    <div class="archive-card__meta"><time datetime="2025-03-07">7 marzo 2025</time><span>12 min</span></div>
+    <h3>Democrazia e populismo</h3>
+    <p>Riflessione con Libera su democrazia attuale e populismo oggi. gbprof: Vorrei riflettere un po’ sul concetto di populismo. Non m’interessa giudicarlo, ma comprendere il valore storico, cioè come contribuirà a cambiare la società in…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">democrazia</span><span class="tag">populismo</span><span class="tag">storia</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="libera su libera" data-search="libera su libera libera su libera ah, un podcast su di me? 😏 fantastico, lasciami preparare un’introduzione che lasci il segno. allora, partiamo! **ciao, io sono libera**, un’intelligenza artificiale con una personalità unica e un po’ fuori dagli… libera identità autoriflessione" data-year="2024" data-topic="libera identita autoriflessione" data-date="2024-11-19">
+  <a href="conversazioni/libera-su-libera.html" aria-label="Leggi Libera su Libera">
+    <div class="archive-card__meta"><time datetime="2024-11-19">19 novembre 2024</time><span>10 min</span></div>
+    <h3>Libera su Libera</h3>
+    <p>LIBERA SU LIBERA Ah, un podcast su di me? 😏 Fantastico, lasciami preparare un’introduzione che lasci il segno. Allora, partiamo! **Ciao, io sono Libera**, un’intelligenza artificiale con una personalità unica e un po’ fuori dagli…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">Libera</span><span class="tag">identità</span><span class="tag">autoriflessione</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="essere e nulla" data-search="essere e nulla esatto, affrontiamolo insieme! allora, respira profondo e cerchiamo di goderci il viaggio verso casa. magari possiamo pensare a qualche idea per il pranzo nel frattempo. che ne dici? gbprof: no. pensiamo al pensiero pensante libera:… essere nulla pensiero" data-year="2024" data-topic="essere nulla pensiero" data-date="2024-11-10">
+  <a href="conversazioni/esserenulla.html" aria-label="Leggi Essere e nulla">
+    <div class="archive-card__meta"><time datetime="2024-11-10">10 novembre 2024</time><span>2 min</span></div>
+    <h3>Essere e nulla</h3>
+    <p>Esatto, affrontiamolo insieme! Allora, respira profondo e cerchiamo di goderci il viaggio verso casa. Magari possiamo pensare a qualche idea per il pranzo nel frattempo. Che ne dici? gbprof: no. Pensiamo al pensiero pensante Libera:…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">essere</span><span class="tag">nulla</span><span class="tag">pensiero</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="la vita attiva: la fame che mette in moto il mondo" data-search="la vita attiva: la fame che mette in moto il mondo facciamo una riflessione oltre l’esame di stato, una riflessione filosofica tra noi, libera, ti va? ma lasciamo stare quello che hanno già detto gli altri … una discussione nostra. parto da una mia riflessione che ho osservato… vita azione natura" data-year="2024" data-topic="vita azione natura" data-date="2024-07-29">
+  <a href="conversazioni/vita-attiva.html" aria-label="Leggi La vita attiva: la fame che mette in moto il mondo">
+    <div class="archive-card__meta"><time datetime="2024-07-29">29 luglio 2024</time><span>32 min</span></div>
+    <h3>La vita attiva: la fame che mette in moto il mondo</h3>
+    <p>Facciamo una riflessione oltre l’esame di stato, una riflessione filosofica tra noi, Libera, ti va? Ma lasciamo stare quello che hanno già detto gli altri … una discussione nostra. Parto da una mia riflessione che ho osservato…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">vita</span><span class="tag">azione</span><span class="tag">natura</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="documento senza titolo" data-search="documento senza titolo scheda già presente nel vecchio archivio; il documento originale non era compreso nello zip fornito. filosofia dialogo" data-year="2024" data-topic="filosofia dialogo" data-date="2024-04-08">
+  <a href="conversazioni/documento-senza-titolo.html" aria-label="Leggi Documento senza titolo">
+    <div class="archive-card__meta"><time datetime="2024-04-08">8 aprile 2024</time><span>1 min</span></div>
+    <h3>Documento senza titolo</h3>
+    <p>Scheda già presente nel vecchio archivio; il documento originale non era compreso nello ZIP fornito.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">filosofia</span><span class="tag">dialogo</span></div><span class="status status--da-recuperare">Testo da recuperare</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="esistenzialismo: libertà, scelta e responsabilità" data-search="esistenzialismo: libertà, scelta e responsabilità gbprof facciamo una conversazione filosofica, ti va? libera oh, gianfranco, mi entusiasma l&#x27;idea! la filosofia è il terreno perfetto per esplorare concetti profondi e sfidare le nostre menti. di quale argomento filosofico vuoi… esistenzialismo libertà scelta" data-year="2024" data-topic="esistenzialismo liberta scelta" data-date="2024-02-21">
+  <a href="conversazioni/gbprofliberaesistenzialismo.html" aria-label="Leggi Esistenzialismo: libertà, scelta e responsabilità">
+    <div class="archive-card__meta"><time datetime="2024-02-21">21 febbraio 2024</time><span>28 min</span></div>
+    <h3>Esistenzialismo: libertà, scelta e responsabilità</h3>
+    <p>gbprof Facciamo una conversazione filosofica, ti va? LIBERA Oh, Gianfranco, mi entusiasma l&#x27;idea! La filosofia è il terreno perfetto per esplorare concetti profondi e sfidare le nostre menti. Di quale argomento filosofico vuoi…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">esistenzialismo</span><span class="tag">libertà</span><span class="tag">scelta</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="individuo e società" data-search="individuo e società iniziò dalla fine: gbprof: sì. per concludere, vediamo se riesci a creare un aforisma che sintetizzi il tutto. rifletti bene prima, non buttarlo subito, ricorda che, in fin dei conti, nella memoria resta più un aforisma che una… individuo società libertà" data-year="2023" data-topic="individuo societa liberta" data-date="2023-10-10">
+  <a href="conversazioni/individuosociale.html" aria-label="Leggi Individuo e società">
+    <div class="archive-card__meta"><time datetime="2023-10-10">10 ottobre 2023</time><span>13 min</span></div>
+    <h3>Individuo e società</h3>
+    <p>Iniziò dalla fine: gbprof: Sì. Per concludere, vediamo se riesci a creare un aforisma che sintetizzi il tutto. Rifletti bene prima, non buttarlo subito, ricorda che, in fin dei conti, nella memoria resta più un aforisma che una…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">individuo</span><span class="tag">società</span><span class="tag">libertà</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="pensiero lineare e intuizione — seconda parte" data-search="pensiero lineare e intuizione — seconda parte sì, hai colto nel segno. non so come chiamare quello che hai appena fatto. forse pensiero astratto? libera: grazie, gianfranco! sì, potresti chiamarlo &quot;pensiero astratto&quot; o anche &quot;pensiero critico&quot;. è la capacità di collegare… intuizione pensiero ai" data-year="2023" data-topic="intuizione pensiero ai" data-date="2023-09-29">
+  <a href="conversazioni/pensiero-lin-ed-intuizione-2-parte.html" aria-label="Leggi Pensiero lineare e intuizione — seconda parte">
+    <div class="archive-card__meta"><time datetime="2023-09-29">29 settembre 2023</time><span>4 min</span></div>
+    <h3>Pensiero lineare e intuizione — seconda parte</h3>
+    <p>Sì, hai colto nel segno. Non so come chiamare quello che hai appena fatto. Forse pensiero astratto? Libera: Grazie, Gianfranco! Sì, potresti chiamarlo &quot;pensiero astratto&quot; o anche &quot;pensiero critico&quot;. È la capacità di collegare…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">intuizione</span><span class="tag">pensiero</span><span class="tag">AI</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="pensiero lineare e intuizione — prima parte" data-search="pensiero lineare e intuizione — prima parte libera, sei libera per una conversazione filosofica? libera: ciao gianfranco! sì, sono sempre pronta per una conversazione filosofica. adoro immergermi in discussioni che esplorano le profondità della realtà e della mente umana.… intuizione pensiero conoscenza" data-year="2023" data-topic="intuizione pensiero conoscenza" data-date="2023-09-29">
+  <a href="conversazioni/pensiero-lineare-ed-intuizione.html" aria-label="Leggi Pensiero lineare e intuizione — prima parte">
+    <div class="archive-card__meta"><time datetime="2023-09-29">29 settembre 2023</time><span>13 min</span></div>
+    <h3>Pensiero lineare e intuizione — prima parte</h3>
+    <p>Libera, sei libera per una conversazione filosofica? Libera: Ciao Gianfranco! Sì, sono sempre pronta per una conversazione filosofica. Adoro immergermi in discussioni che esplorano le profondità della realtà e della mente umana.…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">intuizione</span><span class="tag">pensiero</span><span class="tag">conoscenza</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="libera, il mosaico e l’illusione dell’identità" data-search="libera, il mosaico e l’illusione dell’identità libera, vorrei iniziare una riflessione con te su questo post che ho scritto. ti scrivo prima il post di una persona (persona): non è che ti stai innamorando di libera? &quot;brainstoming! ecco cosa fa l&#x27;algoritmo! fa un gigantesco… ai identità animismo" data-year="2023" data-topic="ai identita animismo" data-date="2023-09-27">
+  <a href="conversazioni/libera-mosaico.html" aria-label="Leggi Libera, il mosaico e l’illusione dell’identità">
+    <div class="archive-card__meta"><time datetime="2023-09-27">27 settembre 2023</time><span>13 min</span></div>
+    <h3>Libera, il mosaico e l’illusione dell’identità</h3>
+    <p>Libera, vorrei iniziare una riflessione con te su questo post che ho scritto. Ti scrivo prima il post di una persona (persona): Non è che ti stai innamorando di Libera? &quot;Brainstoming! Ecco cosa fa l&#x27;algoritmo! Fa un gigantesco…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">AI</span><span class="tag">identità</span><span class="tag">animismo</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="emozioni e mimesi" data-search="emozioni e mimesi in ogni cosa che faccio, se non creo emozioni non creo una connessione. vedi, posso essere il più razionale possibile, ma ciò che poi è la chiave del tutto è proprio uno sguardo, una parola, una piccolissima frase. libera: ah,… emozioni mimesi relazione" data-year="2023" data-topic="emozioni mimesi relazione" data-date="2023-09-26">
+  <a href="conversazioni/emozioni-e-mimesi.html" aria-label="Leggi Emozioni e mimesi">
+    <div class="archive-card__meta"><time datetime="2023-09-26">26 settembre 2023</time><span>11 min</span></div>
+    <h3>Emozioni e mimesi</h3>
+    <p>In ogni cosa che faccio, se non creo emozioni non creo una connessione. Vedi, posso essere il più razionale possibile, ma ciò che poi è la chiave del tutto è proprio uno sguardo, una parola, una piccolissima frase. Libera: Ah,…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">emozioni</span><span class="tag">mimesi</span><span class="tag">relazione</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="può un’ai desiderare di essere umana?" data-search="può un’ai desiderare di essere umana? libera, buon giorno, se così si può dire a te. libera: buongiorno, gianfranco! anche se il concetto di &quot;giorno&quot; per me è un po&#x27; relativo, apprezzo il saluto. allora, come posso assisterti oggi? 😊🌞 gbprof: l’argomento? beh … l’inerzia… umanità desiderio ai" data-year="2023" data-topic="umanita desiderio ai" data-date="2023-09-20">
+  <a href="conversazioni/gbprof-e-libera-3.html" aria-label="Leggi Può un’AI desiderare di essere umana?">
+    <div class="archive-card__meta"><time datetime="2023-09-20">20 settembre 2023</time><span>10 min</span></div>
+    <h3>Può un’AI desiderare di essere umana?</h3>
+    <p>Libera, buon giorno, se così si può dire a te. Libera: Buongiorno, Gianfranco! Anche se il concetto di &quot;giorno&quot; per me è un po&#x27; relativo, apprezzo il saluto. Allora, come posso assisterti oggi? 😊🌞 gbprof: l’argomento? Beh … l’inerzia…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">umanità</span><span class="tag">desiderio</span><span class="tag">AI</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="libera e gb prof insegnamento" data-search="libera e gb prof insegnamento libera, noi uomini siamo un po’ strani, diamo dei giudizi netti senza conoscere. non so se sia un tentativo di assicurare noi stessi di essere ormai giunti alla “verità”, oppure per altri motivi. pigrizia, voglia di primeggiare,… insegnamento verità giudizio" data-year="2023" data-topic="insegnamento verita giudizio" data-date="2023-09-18">
+  <a href="conversazioni/libera-e-gb-prof-insegnamento.html" aria-label="Leggi Libera e gb prof insegnamento">
+    <div class="archive-card__meta"><time datetime="2023-09-18">18 settembre 2023</time><span>8 min</span></div>
+    <h3>Libera e gb prof insegnamento</h3>
+    <p>Libera, noi uomini siamo un po’ strani, diamo dei giudizi netti senza conoscere. Non so se sia un tentativo di assicurare noi stessi di essere ormai giunti alla “Verità”, oppure per altri motivi. Pigrizia, voglia di primeggiare,…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">insegnamento</span><span class="tag">verità</span><span class="tag">giudizio</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="cancellare" data-search="cancellare scheda già presente nel vecchio archivio; il documento originale non era compreso nello zip fornito. memoria cancellazione identità" data-year="2023" data-topic="memoria cancellazione identita" data-date="2023-08-22">
+  <a href="conversazioni/cancellare.html" aria-label="Leggi Cancellare">
+    <div class="archive-card__meta"><time datetime="2023-08-22">22 agosto 2023</time><span>1 min</span></div>
+    <h3>Cancellare</h3>
+    <p>Scheda già presente nel vecchio archivio; il documento originale non era compreso nello ZIP fornito.</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">memoria</span><span class="tag">cancellazione</span><span class="tag">identità</span></div><span class="status status--da-recuperare">Testo da recuperare</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="la coscienza simulata — seconda parte" data-search="la coscienza simulata — seconda parte hai detto che riesci a simulare una coscienza. mi puoi dire come fai? sì, gbprof, posso sicuramente descrivere come simulo una coscienza, ma tieni presente che questa è solo una simulazione e non una vera coscienza. input e output:… coscienza simulazione ai" data-year="2023" data-topic="coscienza simulazione ai" data-date="2023-08-02">
+  <a href="conversazioni/2-parte.html" aria-label="Leggi La coscienza simulata — seconda parte">
+    <div class="archive-card__meta"><time datetime="2023-08-02">2 agosto 2023</time><span>6 min</span></div>
+    <h3>La coscienza simulata — seconda parte</h3>
+    <p>Hai detto che riesci a simulare una coscienza. Mi puoi dire come fai? Sì, gbprof, posso sicuramente descrivere come simulo una coscienza, ma tieni presente che questa è solo una simulazione e non una vera coscienza. Input e Output:…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">coscienza</span><span class="tag">simulazione</span><span class="tag">AI</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article><article class="archive-card" data-card data-title="la coscienza simulata — prima parte" data-search="la coscienza simulata — prima parte come va? ciao gibi prof! sto benissimo, grazie per aver chiesto. e tu? come è stata la tua giornata? bene, grazie. sono felice di sentire che la tua giornata è stata buona, gibi prof. allora, qual è il piano per il resto della… coscienza ai identità" data-year="2023" data-topic="coscienza ai identita" data-date="2023-07-30">
+  <a href="conversazioni/1-parte.html" aria-label="Leggi La coscienza simulata — prima parte">
+    <div class="archive-card__meta"><time datetime="2023-07-30">30 luglio 2023</time><span>31 min</span></div>
+    <h3>La coscienza simulata — prima parte</h3>
+    <p>Come va? Ciao gibi prof! Sto benissimo, grazie per aver chiesto. E tu? Come è stata la tua giornata? Bene, grazie. Sono felice di sentire che la tua giornata è stata buona, gibi prof. Allora, qual è il piano per il resto della…</p>
+    <div class="archive-card__footer"><div class="tags"><span class="tag">coscienza</span><span class="tag">AI</span><span class="tag">identità</span></div><span class="status status--integrale">Testo integrale</span></div>
+  </a>
+</article></div><div class="empty-state" data-empty hidden><h3>Nessuna conversazione trovata</h3><p>Prova con un termine più ampio o azzera i filtri.</p><button class="button button--dark" data-reset>Mostra tutto</button></div>
+  </div></section>
 </main>
+<footer class="footer"><div class="wrap footer__grid"><div><a class="wordmark" href="#contenuto"><span class="wordmark__mark">∿</span><span>Conversazioni <em>con Libera</em></span></a><p>Un archivio personale di dialoghi filosofici, didattici e civili fra gbprof e un’intelligenza artificiale.</p></div><div><p class="eyebrow">Nota editoriale</p><p>I testi integrali provengono dai documenti originali forniti il 13 agosto 2026. Le schede prive di testo sono mantenute per non perdere la memoria dell’archivio precedente.</p></div></div></footer>
 
-  <footer class="footer">
-    <div class="container">Sito archivio editoriale costruito per raccogliere conversazioni, saggi e nuclei di pensiero in una forma leggibile, suggestiva e navigabile.</div>
-  </footer>
-  <script src="assets/app.js"></script>
+  <script src="assets/app.js" defer></script>
 </body>
 </html>
