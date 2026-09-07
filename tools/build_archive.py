@@ -367,6 +367,8 @@ def format_date(value: str) -> str:
 def page_shell(title: str, body: str, *, description: str, root: str = "") -> str:
     safe_title = html.escape(title)
     safe_description = html.escape(description)
+    legal_style = "<style>.gbprof-legal-band{position:relative;z-index:2;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.35rem 1rem;width:100%;margin:0;padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));box-sizing:border-box;color:#f5f5f5;background:#172431;border-top:1px solid #52616d;font:500 .9rem/1.45 system-ui,sans-serif}.gbprof-legal-band a{display:inline-flex;align-items:center;min-height:44px;color:#fff!important;text-decoration:underline;text-underline-offset:.2em}.gbprof-legal-band a:focus-visible{outline:3px solid #ffbf47;outline-offset:3px}@media print{.gbprof-legal-band{display:none}}</style>" if not root else ""
+    legal_footer = "<nav class=\"gbprof-legal-band\" aria-label=\"Informazioni sui materiali didattici\"><a href=\"privacy.html\">Privacy dei materiali</a><a href=\"accessibilita.html\">Accessibilità</a></nav>" if not root else ""
     return f'''<!doctype html>
 <html lang="it">
 <head>
@@ -378,11 +380,13 @@ def page_shell(title: str, body: str, *, description: str, root: str = "") -> st
   <link rel="manifest" href="{root}manifest.webmanifest">
   <link rel="icon" href="{root}assets/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="{root}assets/style.css">
+  {legal_style}
 </head>
 <body>
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
   {body}
   <script src="{root}assets/app.js" defer></script>
+  {legal_footer}
 </body>
 </html>'''
 
