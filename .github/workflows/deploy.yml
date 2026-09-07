@@ -1,0 +1,91 @@
+name: Sincronizza Conversazioni-con-Libera sul server
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-conversazioni-con-libera
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+      DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+
+    steps:
+      - name: Configura SSH
+        shell: bash
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          set -euo pipefail
+
+          test "$DEPLOY_HOST" = "157.180.67.132"
+          test "$DEPLOY_USER" = "gbdeploy"
+
+          install -d -m 700 "$HOME/.ssh"
+          key_file="$HOME/.ssh/conversazioni-deploy"
+          printf '%s\n' "$DEPLOY_SSH_KEY" | tr -d '\r' > "$key_file"
+          chmod 600 "$key_file"
+
+          ssh-keygen -y -f "$key_file" > /dev/null
+
+          printf '%s\n' \
+            '157.180.67.132 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDr7fqbQyfX4YPqM8zf07wgYyeBnNVNASYXQi+VOoxtE' \
+            > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/known_hosts"
+
+      - name: Aggiorna Conversazioni-con-Libera
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          ssh \
+            -i "$HOME/.ssh/conversazioni-deploy" \
+            -o BatchMode=yes \
+            -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=yes \
+            "${DEPLOY_USER}@${DEPLOY_HOST}" 'sh -s' <<'REMOTE'
+          set -eu
+
+          repo=/opt/gbprof/projects/Conversazioni-con-Libera
+          web=/opt/gbprof/www/Conversazioni-con-Libera
+          export GIT_CONFIG_COUNT=1
+          export GIT_CONFIG_KEY_0=safe.directory
+          export GIT_CONFIG_VALUE_0="$repo"
+
+          test -d "$repo/.git"
+          test -L "$web"
+          test "$(readlink -f "$web")" = "$(readlink -f "$repo")"
+
+          cd "$repo"
+          test "$(git remote get-url origin)" = "https://github.com/gb69prof/Conversazioni-con-Libera.git"
+          test -z "$(git status --porcelain=v1)"
+
+          git fetch --prune origin main
+          git merge --ff-only origin/main
+
+          test -z "$(git status --porcelain=v1)"
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
+          test "$(curl -sS -o /dev/null -w '%{http_code}' https://gbprof.it/Conversazioni-con-Libera/)" = "200"
+          test "$(curl -sS -o /dev/null -w '%{http_code}' https://gbprof.it/Conversazioni-con-Libera/manifest.webmanifest)" = "200"
+          test "$(curl -sS -o /dev/null -w '%{http_code}' https://gbprof.it/Conversazioni-con-Libera/.git/config)" = "404"
+          REMOTE
+
+      - name: Elimina la chiave temporanea
+        if: always()
+        shell: bash
+        run: |
+          key_file="$HOME/.ssh/conversazioni-deploy"
+          if [[ -f "$key_file" && ! -L "$key_file" ]]; then
+            unlink -- "$key_file"
+          fi
