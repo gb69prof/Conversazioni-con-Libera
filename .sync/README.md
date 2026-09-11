@@ -1,0 +1,26 @@
+# Sincronizzazione Drive → GitHub
+
+Sorgente: https://drive.google.com/drive/folders/1_jrxV2XR5VKNa4ENg63bz5F_qhrF-kIS
+
+Destinazione: https://github.com/gb69prof/Conversazioni-con-Libera (ramo predefinito).
+
+Questa procedura viene eseguita da ChatGPT Work con i connettori Google Drive e GitHub già collegati. Non richiede token personali, configurazioni API, servizi esterni, server o processi locali permanenti. La ricorrenza è un'attività ChatGPT, non un workflow GitHub. Il registro da solo non esegue controlli.
+
+## Procedura per ogni esecuzione
+
+1. Leggere lo stato attuale del repository, le eventuali istruzioni applicabili e `.sync/drive-sync.json`. Elencare tutti i figli diretti della cartella Drive; se il limite di scansione viene raggiunto, non dichiarare l'elenco completo e segnalare l'anomalia. Segnalare sottocartelle e formati non gestibili senza ignorarli silenziosamente.
+2. Identificare i documenti tramite ID Drive. Per documenti nuovi confrontare il contenuto completo con tutte le conversazioni già archiviate, compresi gli HTML e i documenti con nomi differenti. Non basta confrontare titoli o date. In caso di associazione ambigua non sovrascrivere e segnalare il problema.
+3. Per Google Docs usare il connettore `google_drive_fetch` con `download_raw_file=true` e `raw_export_mime_type=text/markdown`; usare i byte completi restituiti, non anteprime o estratti. Conservare immagini incorporate, link, titoli, elenchi ed enfasi. Per TXT leggere integralmente UTF-8. Per DOC/DOCX scaricare l'originale con il connettore e convertire solo la copia temporanea, con un convertitore che conservi struttura e formattazione; verificare il testo integrale. Non convertire né modificare gli originali su Drive. Se non è possibile una conversione fedele, registrare l'anomalia nel rapporto, senza segnare il documento come sincronizzato.
+4. Normalizzare esclusivamente BOM UTF-8, terminatori CRLF/CR in LF, spazi finali di ogni riga e righe vuote finali (una sola newline finale). Calcolare SHA-256 del corpo così normalizzato: `sourceHash`. Non riscrivere, sintetizzare o correggere il testo. La prima esecuzione conserva persino i refusi originali diversi dagli HTML storici.
+5. Confrontare `sourceHash` con il registro e verificare `markdownHash` sul Markdown GitHub completo. Anche se la data Drive è cambiata, se il contenuto è identico non aggiornare file, date nel registro o commit. `driveModified` resta la data osservata nell'ultima sincronizzazione effettiva. Un hash GitHub diverso indica modifiche intervenute sul repository: confrontare entrambe le versioni e non sovrascrivere alla cieca.
+6. Per nuovi contenuti conservare il percorso già associato; per nuovi documenti usare uno slug coerente e univoco in `conversazioni/`. Affiancare il Markdown all'HTML della stessa conversazione senza duplicare la scheda nell'indice. Aggiungere metadati verificati e un titolo solo se necessario; conservare il corpo originale. Non dedurre la data della conversazione dalla data di caricamento Drive.
+7. Quando cambia il testo aggiornare anche la pagina HTML corrispondente, preservando struttura, navigazione e strumenti di lettura. Per nuovi documenti creare una pagina coerente con il sito e aggiungere una sola scheda all'indice HTML. Aggiornare l'indice Markdown nel README, in ordine cronologico decrescente. Per conversazioni di data ignota dichiarare la data non disponibile.
+8. Aggiornare nel registro solo le voci realmente sincronizzate: ID, titolo, nome sorgente, MIME, percorsi, data certa della conversazione, `lastSync` UTC, `driveModified`, `sourceHash`, `markdownHash` e metodo di conversione. Non conservare credenziali, URL temporanei di download o revisioni volatili.
+9. Non propagare cancellazioni o spostamenti fuori dalla cartella: conservare l'archivio GitHub. Segnalare gli ID registrati scomparsi. `historicalHtmlOutsideSourceFolder` contiene le 27 pagine già presenti ma prive di una sorgente in questa cartella al primo controllo: è una base storica, non un elenco da cancellare.
+10. Verificare completezza del contenuto, unicità delle associazioni, validità JSON e link relativi. Rileggere il ramo prima della pubblicazione e le date Drive: se le sorgenti o il repository cambiano durante il lavoro, riconciliare prima di pubblicare. Creare un unico commit `sync: ...` con tutti i file necessari usando il connettore GitHub; aggiornare il riferimento senza force. Rileggere i file pubblicati e verificare gli hash. Non eseguire commit vuoti.
+
+## Rapporto
+
+Riportare documenti analizzati, nuovi, aggiornati, invariati, stato dell'indice, anomalie e commit. Distinguere copie Markdown inizialmente aggiunte da nuove conversazioni: al primo controllo le 9 sorgenti erano già presenti in HTML. Nessuna differenza sostanziale: separatori, etichette delle immagini, un refuso e una separazione fra parole differivano in alcune pagine storiche. Gli HTML sono stati conservati e dotati del collegamento alla copia fedele Markdown.
+
+Se non cambia nulla: «Nessuna nuova conversazione o modifica rilevata. Repository già sincronizzato.» Aggiungere comunque eventuali errori di accesso, conflitti, documenti scomparsi o anomalie nuove; non dichiarare sincronizzazione riuscita se il controllo è incompleto.
