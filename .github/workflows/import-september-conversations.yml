@@ -1,0 +1,227 @@
+name: Importa conversazioni settembre 2026
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/import-september-conversations.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Importa i due dialoghi e aggiorna l'indice
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import urllib.request, re, html, math
+
+          ROOT = Path('.')
+          CONV = ROOT / 'conversazioni'
+          INDEX = ROOT / 'index.html'
+
+          docs = [
+              {
+                  'id': '1IOS5ENC8yZfLJZOtG8LYA88D0y3blcwMmXPHuv_BYnI',
+                  'date': '2026-09-08',
+                  'date_it': '8 settembre 2026',
+                  'slug': 'quarta-ferita-intelligenza-memoria-compressione.html',
+                  'title': 'La quarta ferita: intelligenza, memoria e compressione del mondo',
+                  'summary': 'Dalle ferite narcisistiche di Freud all’AI: il dialogo diventa una riflessione su memoria, concetti e capacità umana di comprimere il mondo senza perdere significato.',
+                  'tags': ['AI', 'filosofia', 'memoria'],
+                  'topic': 'ai filosofia memoria',
+                  'prev': 'abbiamo-costruito-gravita-smartphone-adolescenti.html',
+                  'prev_title': 'Abbiamo costruito la gravità: smartphone e adolescenti',
+                  'next': 'dio-incarnazione-identita-uomo-ai.html',
+                  'next_title': 'Dio, incarnazione e identità: un esperimento tra uomo e AI',
+              },
+              {
+                  'id': '18BSVc_tSh9TUEmp4Uz5rF7f__mNICm1s5dtwPq8y3vI',
+                  'date': '2026-09-10',
+                  'date_it': '10 settembre 2026',
+                  'slug': 'dio-incarnazione-identita-uomo-ai.html',
+                  'title': 'Dio, incarnazione e identità: un esperimento tra uomo e AI',
+                  'summary': 'Un esperimento filosofico sul rapporto creatore-creatura porta a mettere alla prova incarnazione, onnipotenza, morte, risurrezione e identità personale.',
+                  'tags': ['religione', 'identità', 'filosofia'],
+                  'topic': 'religione identita filosofia',
+                  'prev': 'quarta-ferita-intelligenza-memoria-compressione.html',
+                  'prev_title': 'La quarta ferita: intelligenza, memoria e compressione del mondo',
+                  'next': None,
+                  'next_title': None,
+              }
+          ]
+
+          def download_text(doc_id):
+              url = f'https://docs.google.com/document/d/{doc_id}/export?format=txt'
+              req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  return r.read().decode('utf-8-sig').replace('\r\n', '\n').replace('\r', '\n')
+
+          def split_messages(text):
+              lines = text.split('\n')
+              messages = []
+              speaker = None
+              buf = []
+              for raw in lines:
+                  line = raw.rstrip()
+                  m = re.match(r'^(gbprof|Libera):\s*(.*)$', line)
+                  if m:
+                      if speaker is not None:
+                          messages.append((speaker, '\n'.join(buf).strip()))
+                      speaker = m.group(1)
+                      buf = [m.group(2)]
+                  else:
+                      if speaker is not None:
+                          buf.append(line)
+              if speaker is not None:
+                  messages.append((speaker, '\n'.join(buf).strip()))
+              return messages
+
+          def paras(body):
+              parts = re.split(r'\n\s*\n+', body.strip()) if body.strip() else []
+              out = []
+              for p in parts:
+                  # Mantiene gli a-capo significativi senza introdurre HTML non sicuro.
+                  esc = html.escape(p, quote=False).replace('\n', '<br>')
+                  out.append(f'<p>{esc}</p>')
+              return '\n'.join(out)
+
+          def page(meta, text):
+              msgs = split_messages(text)
+              body = []
+              for speaker, content in msgs:
+                  cls = 'gbprof' if speaker == 'gbprof' else 'libera'
+                  body.append(
+                      f'<section class="message message--{cls}"><div class="message__speaker">{speaker}</div>'
+                      f'<div class="message__body">{paras(content)}</div></section>'
+                  )
+              words = len(re.findall(r"\b[\wÀ-ÖØ-öø-ÿ’'-]+\b", text, flags=re.UNICODE))
+              mins = max(1, math.ceil(words / 220))
+              tags = ''.join(f'<span class="tag">{html.escape(t)}</span>' for t in meta['tags'])
+              nav = []
+              if meta['prev']:
+                  nav.append(f'<a href="{meta["prev"]}"><span>← Precedente</span><strong>{html.escape(meta["prev_title"])}</strong></a>')
+              if meta['next']:
+                  nav.append(f'<a class="next" href="{meta["next"]}"><span>Successiva →</span><strong>{html.escape(meta["next_title"])}</strong></a>')
+              nav_html = '<nav class="conversation-nav wrap" aria-label="Conversazioni adiacenti">' + ''.join(nav) + '</nav>'
+              return f'''<!doctype html>
+          <html lang="it">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="theme-color" content="#15120f">
+            <meta name="description" content="{html.escape(meta['summary'], quote=True)}">
+            <title>{html.escape(meta['title'])} — Conversazioni con Libera</title>
+            <link rel="manifest" href="../manifest.webmanifest">
+            <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+            <link rel="stylesheet" href="../assets/style.css">
+          </head>
+          <body>
+            <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+            <div class="reading-progress" data-reading-progress></div>
+            <header class="site-header site-header--solid"><div class="wrap site-header__inner"><a class="wordmark" href="../index.html"><span class="wordmark__mark">∿</span><span>Conversazioni <em>con Libera</em></span></a><nav aria-label="Navigazione principale"><a href="../index.html#archivio">Archivio</a><button class="icon-button" data-theme-toggle aria-label="Cambia tema">◐</button></nav></div></header>
+            <main id="contenuto" class="conversation-page">
+              <header class="conversation-hero wrap"><a class="back-link" href="../index.html#archivio">← Torna all’archivio</a><div class="conversation-hero__meta"><time datetime="{meta['date']}">{meta['date_it']}</time><span>{mins} min di lettura</span><span>dialogo</span></div><h1>{html.escape(meta['title'])}</h1><p>{html.escape(meta['summary'])}</p><div class="tags">{tags}</div></header>
+              <div class="reading-layout wrap"><aside class="reading-tools"><div class="reading-tools__sticky"><p class="eyebrow">Lettura</p><button data-font="down" aria-label="Riduci carattere">A−</button><button data-font="up" aria-label="Aumenta carattere">A+</button><button data-print>Stampa</button><button data-copy-link>Copia link</button><p class="source-state">Testo integrale importato dal documento originale.</p></div></aside><article class="conversation-text" data-reading-text>{''.join(body)}</article></div>
+              {nav_html}
+            </main>
+            <footer class="footer footer--compact"><div class="wrap"><p>Conversazioni con Libera · Archivio dialogico gbprof</p></div></footer>
+            <script src="../assets/app.js" defer></script>
+          </body>
+          </html>''', words, mins
+
+          rendered = []
+          added_words = 0
+          for meta in docs:
+              text = download_text(meta['id'])
+              if not re.search(r'^gbprof:', text, flags=re.M) or not re.search(r'^Libera:', text, flags=re.M):
+                  raise RuntimeError(f'Testo non riconosciuto per {meta["id"]}')
+              content, words, mins = page(meta, text)
+              (CONV / meta['slug']).write_text(content, encoding='utf-8')
+              meta['words'] = words
+              meta['mins'] = mins
+              rendered.append(meta)
+              added_words += words
+
+          def card(meta):
+              search = f"{meta['title']} {meta['summary']} {' '.join(meta['tags'])}".lower()
+              tags = ''.join(f'<span class="tag">{html.escape(t)}</span>' for t in meta['tags'])
+              return f'''<article class="archive-card" data-card data-title="{html.escape(meta['title'].lower(), quote=True)}" data-search="{html.escape(search, quote=True)}" data-year="2026" data-topic="{meta['topic']}" data-date="{meta['date']}">
+            <a href="conversazioni/{meta['slug']}" aria-label="Leggi {html.escape(meta['title'], quote=True)}">
+              <div class="archive-card__meta"><time datetime="{meta['date']}">{meta['date_it']}</time><span>{meta['mins']} min</span></div>
+              <h3>{html.escape(meta['title'])}</h3>
+              <p>{html.escape(meta['summary'])}</p>
+              <div class="archive-card__footer"><div class="tags">{tags}</div><span class="status status--integrale">Testo integrale</span></div>
+            </a>
+          </article>'''
+
+          idx = INDEX.read_text(encoding='utf-8')
+
+          # Evita duplicati in eventuali rilanci.
+          for meta in docs:
+              pattern = re.compile(r'<article class="archive-card"[^>]*>\s*<a href="conversazioni/' + re.escape(meta['slug']) + r'".*?</article>', re.S)
+              idx = pattern.sub('', idx)
+
+          # Aggiorna i numeri dell'archivio una sola volta partendo dallo stato corrente.
+          idx = re.sub(r'(<div><strong>)34(</strong><span>conversazioni catalogate</span>)', r'\g<1>36\2', idx, count=1)
+          idx = re.sub(r'(<div><strong>)27(</strong><span>testi integrali</span>)', r'\g<1>29\2', idx, count=1)
+          idx = re.sub(r'(<span data-result-count>)34(</span> conversazioni)', r'\g<1>36\2', idx, count=1)
+          m = re.search(r'<div><strong>([\d,]+)</strong><span>parole conservate</span></div>', idx)
+          if m:
+              old = int(m.group(1).replace(',', ''))
+              new = f'{old + added_words:,}'
+              idx = idx[:m.start(1)] + new + idx[m.end(1):]
+
+          # Le tre acquisizioni recenti: 10/9, 8/9, poi la più recente già presente.
+          recent_match = re.search(r'(<div class="featured-grid">)(.*?)(</div></section>\s*<section class="archive section")', idx, flags=re.S)
+          if not recent_match:
+              raise RuntimeError('Sezione recenti non trovata')
+          old_recent = recent_match.group(2)
+          existing_cards = re.findall(r'<article class="archive-card".*?</article>', old_recent, flags=re.S)
+          old_first = existing_cards[0] if existing_cards else ''
+          new_recent = card(docs[1]) + card(docs[0]) + old_first
+          idx = idx[:recent_match.start(2)] + new_recent + idx[recent_match.end(2):]
+
+          # Prepend nell'archivio completo, già ordinato dal più recente.
+          marker = '<div class="archive-grid" data-archive-grid>'
+          pos = idx.find(marker)
+          if pos < 0:
+              raise RuntimeError('Griglia archivio non trovata')
+          insert_at = pos + len(marker)
+          idx = idx[:insert_at] + card(docs[1]) + card(docs[0]) + idx[insert_at:]
+
+          INDEX.write_text(idx, encoding='utf-8')
+          PY
+
+      - name: Verifica file generati
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s conversazioni/quarta-ferita-intelligenza-memoria-compressione.html
+          test -s conversazioni/dio-incarnazione-identita-uomo-ai.html
+          grep -q 'data-result-count>36<' index.html
+          grep -q 'dio-incarnazione-identita-uomo-ai.html' index.html
+          grep -q 'quarta-ferita-intelligenza-memoria-compressione.html' index.html
+
+      - name: Commit dei risultati
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html conversazioni/quarta-ferita-intelligenza-memoria-compressione.html conversazioni/dio-incarnazione-identita-uomo-ai.html
+          if git diff --cached --quiet; then
+            echo 'Nessuna modifica da registrare.'
+            exit 0
+          fi
+          git commit -m 'Aggiunge le conversazioni dell’8 e 10 settembre 2026'
+          git push origin HEAD:main
