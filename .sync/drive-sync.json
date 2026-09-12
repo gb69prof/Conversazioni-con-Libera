@@ -139,6 +139,21 @@
       "initialMatch": "existing-html-content",
       "status": "synced",
       "conversion": "google-native-markdown-export-v1"
+    },
+    "1JL-LcIF0CpAqksv7ALR-Oo8tmbAyvleUI7QTLdaM7OU": {
+      "title": "Allineare l’intelligenza al bene: dall’AI all’educazione umana",
+      "source": "11-09-26",
+      "mimeType": "application/vnd.google-apps.document",
+      "github": "conversazioni/allineare-intelligenza-bene.md",
+      "html": "conversazioni/allineare-intelligenza-bene.html",
+      "conversationDate": "2026-09-11",
+      "lastSync": "2026-09-12T06:14:55+00:00",
+      "driveModified": "2026-09-11T06:28:34.222Z",
+      "sourceHash": "baa45a931504da9626dc8ce0ab79775a2c14d00bd76613d9577c0711766ef6cd",
+      "markdownHash": "61ba335a9fb620af2ce2bf9095dd60ec8da32e47d569fdd0e215b4549e80d2fc",
+      "initialMatch": "new-conversation",
+      "status": "synced",
+      "conversion": "google-native-markdown-export-v1"
     }
   },
   "historicalHtmlOutsideSourceFolder": [

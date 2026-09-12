@@ -4,8 +4,8 @@ Archivio statico delle conversazioni fra **gbprof** e **Libera**.
 
 ## Contenuto
 
-- 36 conversazioni catalogate dal 2023 al 2026
-- 29 testi integrali importati dai documenti originali
+- 37 conversazioni catalogate dal 2023 al 2026
+- 30 testi integrali importati dai documenti originali
 - 7 schede conservate dal vecchio archivio, in attesa del testo originale
 - ricerca, filtri per anno e tema, ordinamento e pagine di lettura dedicate
 - tema chiaro/scuro, dimensione del testo regolabile, stampa e copia del collegamento
@@ -18,6 +18,7 @@ Il sito è progettato per GitHub Pages e non richiede compilazione.
 
 Gli originali restano su Drive. Le copie Markdown conservano il testo e la formattazione esportati; le pagine HTML esistenti restano consultabili.
 
+- 2026-09-11 — [Allineare l’intelligenza al bene: dall’AI all’educazione umana](conversazioni/allineare-intelligenza-bene.md) · [Pagina web](conversazioni/allineare-intelligenza-bene.html)
 - 2026-09-10 — [Dio, incarnazione e identità: un esperimento tra uomo e AI](conversazioni/dio-incarnazione-identita-uomo-ai.md) · [Pagina web](conversazioni/dio-incarnazione-identita-uomo-ai.html)
 - 2026-09-08 — [La quarta ferita: intelligenza, memoria e compressione del mondo](conversazioni/quarta-ferita-intelligenza-memoria-compressione.md) · [Pagina web](conversazioni/quarta-ferita-intelligenza-memoria-compressione.html)
 - 2026-08-27 — [La dittatura dell’unica interpretazione](conversazioni/dittatura-unica-interpretazione.md) · [Pagina web](conversazioni/dittatura-unica-interpretazione.html)
@@ -29,3 +30,4 @@ Gli originali restano su Drive. Le copie Markdown conservano il testo e la forma
 - 2025-11-16 — [La costruzione di miti e simboli](conversazioni/la-costruzione-di-miti-e-simboli.md) · [Pagina web](conversazioni/la-costruzione-di-miti-e-simboli.html)
 
 Registro: [.sync/drive-sync.json](.sync/drive-sync.json). Procedura: [.sync/README.md](.sync/README.md). Il rapporto `dati/import-report.json` descrive la prima importazione del 13 agosto 2026 e non è il registro corrente.
+
