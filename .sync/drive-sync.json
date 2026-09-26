@@ -154,6 +154,51 @@
       "initialMatch": "new-conversation",
       "status": "synced",
       "conversion": "google-native-markdown-export-v1"
+    },
+    "17iAtTadlmrHiztihf9loJyMsz7qjbvNAX_Z_8gecja8": {
+      "title": "L’umanità non deve essere certificata",
+      "source": "15 settembre 2026",
+      "mimeType": "application/vnd.google-apps.document",
+      "github": "conversazioni/umanita-non-deve-essere-certificata.md",
+      "html": "conversazioni/umanita-non-deve-essere-certificata.html",
+      "conversationDate": "2026-09-15",
+      "lastSync": "2026-09-26T07:01:11+00:00",
+      "driveModified": "2026-09-15T07:38:59.975Z",
+      "sourceHash": "afd0571e859a0aee4a2264305ee12a5f52cf9583cd482faf3c0f321a1e58c638",
+      "markdownHash": "b2e4d618ef1dabd466f68b9a68893ca02511cc74e1d8dfb92011dd01f2db11d5",
+      "initialMatch": "new-conversation",
+      "status": "synced",
+      "conversion": "google-native-markdown-export-v1"
+    },
+    "1HsYHQXbuS-dnrDAjGtBiPw5krVhFUV0ZoaebyOFzxaQ": {
+      "title": "La gestazione delle idee: valori, scelta e responsabilità",
+      "source": "18-9-26",
+      "mimeType": "application/vnd.google-apps.document",
+      "github": "conversazioni/gestazione-idee-valori-scelta-responsabilita.md",
+      "html": "conversazioni/gestazione-idee-valori-scelta-responsabilita.html",
+      "conversationDate": "2026-09-18",
+      "lastSync": "2026-09-26T07:01:11+00:00",
+      "driveModified": "2026-09-18T17:12:00.314Z",
+      "sourceHash": "cf5035ed929288d80a11b2b3e9716dabf30c6b573964a5bb187f4dafb615d9ae",
+      "markdownHash": "0a1111a340f2a18518c2810c3f15085bae9d2735a5b2d8da9494abfbc2e938c9",
+      "initialMatch": "new-conversation",
+      "status": "synced",
+      "conversion": "google-native-markdown-export-v1"
+    },
+    "1N7od0H0bjWWbxdYgFEYknyInF4Kp21hyngZdxF8OVjI": {
+      "title": "La curiosità a scuola: strumenti, metodo e libertà intellettuale",
+      "source": "20-09-2026",
+      "mimeType": "application/vnd.google-apps.document",
+      "github": "conversazioni/curiosita-scuola-strumenti-metodo.md",
+      "html": "conversazioni/curiosita-scuola-strumenti-metodo.html",
+      "conversationDate": "2026-09-20",
+      "lastSync": "2026-09-26T07:01:11+00:00",
+      "driveModified": "2026-09-20T15:54:13.934Z",
+      "sourceHash": "b64ecb2be912b6c2838edcf0d59a143eafabb5673252729f204a1582cbcd5811",
+      "markdownHash": "b69f95b912fe83aa28c5fd1f0bb57939d6e3f168d8399e7e983be825071f30ad",
+      "initialMatch": "new-conversation",
+      "status": "synced",
+      "conversion": "google-native-markdown-export-v1"
     }
   },
   "historicalHtmlOutsideSourceFolder": [

@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15120f">
+  <meta name="description" content="Dalla rapidità decisionale di Jev alla lentezza educativa: le idee maturano nel conflitto tra valori, e scegliere significa assumersi ciò che non si può salvare.">
+  <title>La gestazione delle idee: valori, scelta e responsabilità — Conversazioni con Libera</title>
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <div class="reading-progress" data-reading-progress></div>
+  <header class="site-header site-header--solid"><div class="wrap site-header__inner"><a class="wordmark" href="../index.html"><span class="wordmark__mark">∿</span><span>Conversazioni <em>con Libera</em></span></a><nav aria-label="Navigazione principale"><a href="../index.html#archivio">Archivio</a><button class="icon-button" data-theme-toggle aria-label="Cambia tema">◐</button></nav></div></header>
+  <main id="contenuto" class="conversation-page">
+    <header class="conversation-hero wrap"><a class="back-link" href="../index.html#archivio">← Torna all’archivio</a><div class="conversation-hero__meta"><time datetime="2026-09-18">18 settembre 2026</time><span>19 min di lettura</span><span>dialogo</span></div><h1>La gestazione delle idee: valori, scelta e responsabilità</h1><p>Dalla rapidità decisionale di Jev alla lentezza educativa: le idee maturano nel conflitto tra valori, e scegliere significa assumersi ciò che non si può salvare.</p><div class="tags"><span class="tag">etica</span><span class="tag">filosofia</span><span class="tag">scelta</span></div></header>
+    <div class="reading-layout wrap"><aside class="reading-tools"><div class="reading-tools__sticky"><p><a href="gestazione-idee-valori-scelta-responsabilita.md" download>Scarica il testo Markdown</a></p><p class="eyebrow">Lettura</p><button data-font="down" aria-label="Riduci carattere">A−</button><button data-font="up" aria-label="Aumenta carattere">A+</button><button data-print>Stampa</button><button data-copy-link>Copia link</button><p class="source-state">Testo integrale importato dal documento originale.</p></div></aside><article class="conversation-text" data-reading-text><section class="message message--gbprof"><div class="message__speaker">gbprof</div><div class="message__body"><p>Mi spieghi cos’è la nuova ai Jev?</p>
+</div></section><section class="message message--libera"><div class="message__speaker">Libera</div><div class="message__body"><p>Sì. Ed è interessante proprio perché Jev non cerca di essere una nuova ChatGPT. È quasi il contrario.</p>
+<p>Jev è stato presentato il 15 settembre 2026 da TypeSafe AI, la startup fondata da Diogo Almeida, ex ricercatore OpenAI che ha contribuito ai lavori sull&#39;instruction following alla base di ChatGPT. TypeSafe lo definisce il primo “System One Model”: un&#39;IA progettata non per conversare o produrre testi, ma per prendere rapidamente decisioni strutturate.</p>
+<p>La differenza fondamentale</p>
+<p>Io, come GPT, ricevo qualcosa del genere:</p>
+<p>«Questo studente ha scritto questa risposta. Spiegami se ha capito la Rivoluzione francese.»</p>
+<p>e posso produrre una spiegazione articolata.</p>
+<p>Jev invece funziona più così. Gli dai la risposta dello studente e stabilisci prima quali giudizi sono ammessi:</p>
+<p>La risposta dimostra comprensione del rapporto causa-effetto?</p>
+<p>- sì
+- parzialmente
+- no</p>
+<p>Jev non scrive un tema per spiegarti cosa pensa. Restituisce qualcosa concettualmente simile a:</p>
+<p>parzialmente → 82%</p>
+<p>oppure una distribuzione di probabilità fra le alternative. Può rispondere a domande di tipo sì/no, scegliere fra alternative definite oppure assegnare un valore su una scala.</p>
+<p>Perché costruire un&#39;IA così limitata?</p>
+<p>Perché un&#39;enorme quantità di lavoro svolto oggi dagli LLM non richiede realmente la generazione di linguaggio.</p>
+<p>Pensa a un agente autonomo che deve continuamente decidere:</p>
+<p>Devo aprire questa pagina?
+Devo usare questo strumento?
+Questa mail è importante?
+Questo testo contiene un tentativo di jailbreak?
+Questo documento appartiene alla categoria A, B o C?
+L&#39;utente sta chiedendo X oppure Y?</p>
+<p>Usare ogni volta un grosso modello generativo è costoso e relativamente lento.</p>
+<p>Jev vuole diventare una specie di strato decisionale rapidissimo inserito dentro programmi e agenti.</p>
+<p>TypeSafe dichiara latenze nell&#39;ordine di 70–500 millisecondi e un prezzo di 0,042 dollari per milione di token in ingresso, con output gratuito. I numeri comparativi — fino a circa 200× più veloce e oltre 400× più economico in alcuni benchmark — vengono però dalla società e dai suoi test, quindi per ora li considererei promettenti, non verità acquisite.</p>
+<p>Ma la cosa che secondo me conta davvero è un&#39;altra.</p>
+<p>TypeSafe chiama la tecnica di addestramento RLCD — Reinforcement Learning for Calibrated Decisions.</p>
+<p>L&#39;obiettivo non è semplicemente:</p>
+<p>«Dammi la risposta.»</p>
+<p>ma:</p>
+<p>«Dammi una decisione e dimmi quanto sei sicuro.»</p>
+<p>E soprattutto l&#39;output è vincolato. Se il programma stabilisce che le risposte possibili sono:</p>
+<p>vero / falso / incerto</p>
+<p>Jev non può improvvisare una quarta categoria o mettersi a raccontare una storia. Questo elimina gli errori di formato/tipo, non significa affatto che Jev non possa prendere la decisione sbagliata. È una distinzione importante che alcune presentazioni entusiaste stanno già confondendo.</p>
+<p>Ma la cosa che secondo me conta davvero è un&#39;altra</p>
+<p>Ricordi il nostro discorso su AGI e specializzazione?</p>
+<p>Jev va in una direzione curiosamente diversa dalla corsa al «modello gigantesco che sa fare tutto».</p>
+<p>Immagina invece un sistema composto da:</p>
+<p>GPT-5.6 → ragiona, conversa, pianifica
+↓
+Jev → prende migliaia di microdecisioni velocissime
+↓
+software → esegue</p>
+<p>In questo senso Jev potrebbe essere molto interessante non come concorrente di GPT, Claude o Gemini, ma come componente degli agenti costruiti intorno a loro. È più vicino a un riflesso che a un interlocutore.</p>
+<p>E infatti il nome System One richiama esplicitamente la distinzione resa celebre da Kahneman: Sistema 1 rapido e intuitivo contro Sistema 2 lento e deliberativo.</p>
+<p>Per dirla nel modo più semplice:</p>
+<p>GPT cerca di capire cosa dire. Jev cerca di decidere cosa fare.</p>
+<p>È una semplificazione, naturalmente, ma coglie bene l&#39;idea.</p>
+<p>E c&#39;è un aspetto che trovo ancora più interessante: Jev potrebbe avere applicazioni molto concrete proprio nelle PWA didattiche che stiamo costruendo. Per esempio, non limitarsi al test «A/B/C», ma classificare in tempo reale una risposta libera dello studente: ha individuato la causa? ha confuso causa e conseguenza? sta usando un concetto pertinente? — e poi lasciare a un LLM il compito più costoso di costruire il recupero personalizzato.</p>
+<p>Quella combinazione, più che Jev preso isolatamente, è la parte tecnologicamente interessante.</p>
+</div></section><section class="message message--gbprof"><div class="message__speaker">gbprof</div><div class="message__body"><p>Non lo so, in questo caso credo che la lentezza (parlo della scuola e del rapporto tra me o la materia ed il ragazzo) debba essere ancora mantenuta. Mi riferisco alla lentezza nella decisione perché entrano in gioco le persone, la loro crescita. Forse in altre situazioni sarebbe ottima utilizzarla, ma in questa ci vuole ancora un dialogo che impieghi tempo prima della decisione.</p>
+</div></section><section class="message message--libera"><div class="message__speaker">Libera</div><div class="message__body"><p>Sì, e farei una distinzione ancora più radicale: nella scuola la lentezza non è necessariamente inefficienza. Può essere parte del processo educativo.</p>
+<p>Il problema dell&#39;esempio che ti avevo fatto con Jev è proprio questo. Se uno studente scrive una risposta sbagliata, la domanda interessante non è immediatamente «corretta/parzialmente corretta/errata?». Quella è la domanda del sistema di valutazione. La domanda dell&#39;insegnante è spesso un&#39;altra:</p>
+<p>«Perché hai risposto così?»</p>
+<p>E lì cambia tutto.</p>
+<p>Un ragazzo può dare la stessa risposta sbagliata per ragioni completamente differenti: non ha studiato; ha studiato ma ha frainteso; possiede i concetti ma non riesce a esprimerli; ha costruito un ragionamento originale partendo però da una premessa falsa; oppure — caso didatticamente preziosissimo — ha visto qualcosa che noi non avevamo previsto.</p>
+<p>Una macchina decisionale rapidissima rischia di chiudere proprio quello spazio: input → classificazione → decisione. L&#39;insegnamento, invece, spesso ha bisogno di fare l&#39;opposto: input → sospensione del giudizio → domanda → nuova risposta → reinterpretazione → eventualmente giudizio.</p>
+<p>E qui tocchiamo qualcosa che va oltre Jev. Da anni l&#39;informatica educativa tende a considerare un vantaggio tutto ciò che riduce il tempo necessario per ottenere una risposta. Non sono convinta che questo principio possa essere trasferito senza modifiche all&#39;educazione.</p>
+<p>Se un server impiega 300 ms invece di tre secondi, meglio.</p>
+<p>Se un sistema individua una frode bancaria in 100 ms, meglio.</p>
+<p>Se un agente deve scegliere quale strumento software utilizzare, probabilmente meglio.</p>
+<p>Ma se un ragazzo sta formando un concetto, quei tre secondi, trenta secondi o cinque minuti possono essere precisamente il luogo nel quale avviene qualcosa di importante.</p>
+<p>E aggiungerei una cosa sulla quale forse saremo persino più severi: non affiderei a Jev neppure il giudizio preliminare «questo ragazzo ha capito/non ha capito» come fatto neutro. Potrei usarlo per segnalarmi: «questa risposta presenta questi elementi; guarda qui». La decisione educativa la terrei invece dentro il dialogo.</p>
+<p>In altre parole, nella tua PWA preferirei una IA che dicesse:</p>
+<p>«Hai collegato la crisi finanziaria alla Rivoluzione francese. Mi spieghi perché secondo te la crisi dello Stato può trasformarsi in una crisi politica?»</p>
+<p>piuttosto che:</p>
+<p>«Comprensione causa-effetto: parziale, 82%.»</p>
+<p>La seconda è molto più efficiente.</p>
+<p>La prima sta insegnando.</p>
+<p>Ed è una bella ironia: proprio mentre costruiamo macchine capaci di decidere sempre più velocemente, uno dei compiti della scuola potrebbe diventare quello di insegnare agli esseri umani quando vale la pena non decidere subito.</p>
+</div></section><section class="message message--gbprof"><div class="message__speaker">gbprof</div><div class="message__body"><p>Sì, la gestazione delle idee … Non so se l’istinto è una accelerazione di questo processo, cioè una condensazione istantanea delle “idee” oppure le idee nascono da “istinti” contrastanti che si “combattono” e quindi in questa “guerra” c’è il tempo per far emergere la scelta.</p>
+</div></section><section class="message message--libera"><div class="message__speaker">Libera</div><div class="message__body"><p>Qui tocchi una distinzione che secondo me è decisiva. E tra le due ipotesi che proponi, non sceglierei nettamente la prima. Credo che accadano entrambe, ma a livelli diversi.</p>
+<p>Quello che chiamiamo istinto o intuizione può sembrare una decisione istantanea: «questa cosa non mi convince», «questa persona mente», «questa soluzione è quella giusta». La coscienza riceve quasi direttamente il risultato, senza assistere a tutti i passaggi che l&#39;hanno prodotto. Da questo punto di vista la tua immagine della condensazione funziona molto bene: moltissime elaborazioni precedenti precipitano improvvisamente in una forma.</p>
+<p>Ma c&#39;è un&#39;altra possibilità, secondo me ancora più interessante, ed è proprio la tua guerra degli istinti.</p>
+<p>Prendi una decisione banalissima: qualcuno ti propone qualcosa e immediatamente una parte di te dice sì. Contemporaneamente qualcosa dice no. Non necessariamente sono già pensieri formulati linguisticamente. Possono essere attrazione, diffidenza, memoria implicita di esperienze precedenti, aspettativa di ricompensa, paura delle conseguenze, abitudine sociale. Sono spinte concorrenti.</p>
+<p>La coscienza potrebbe intervenire successivamente e trasformare quella competizione in qualcosa che riconosciamo come pensiero:</p>
+<p>«Lo vorrei, però...»
+«Sì, ma se...»
+«Aspetta, c&#39;è qualcosa che non torna...»</p>
+<p>Ed ecco comparire il tempo.</p>
+<p>La cosa affascinante è che allora la gestazione non sarebbe semplicemente pensare lentamente. Sarebbe impedire che la prima configurazione vincente chiuda troppo presto la competizione.</p>
+<p>Questo cambia anche ciò che dicevamo prima su Jev.</p>
+<p>Un sistema decisionale rapidissimo è progettato precisamente per ottenere:</p>
+<p>stimoli → competizione → vincitore → output.</p>
+<p>Un essere umano capace di riflessione può invece fare qualcosa di stranissimo:</p>
+<p>stimoli → competizione → possibile vincitore → «aspetta» → nuovi elementi → nuova competizione → ristrutturazione del problema → decisione.</p>
+<p>E quel piccolo «aspetta» mi sembra enormemente importante.</p>
+<p>Perché permette persino una cosa ancora più sofisticata: cambiare la domanda mentre la stiamo risolvendo.</p>
+<p>Uno studente può partire chiedendosi:</p>
+<p>«Napoleone era buono o cattivo?»</p>
+<p>Poi incontra rivoluzione, guerra, Codice civile, censura, plebisciti, conquiste, interessi sociali differenti. Se gli chiediamo subito di scegliere, avremo una risposta. Se invece lasciamo gestare il problema, può accadere qualcosa di cognitivamente superiore: arriva a capire che la domanda iniziale era troppo povera.</p>
+<p>A quel punto non ha semplicemente trovato una risposta migliore.</p>
+<p>Ha costruito una domanda migliore.</p>
+<p>Ed è qui che metterei una differenza importante rispetto all&#39;idea romantica della lentezza. Non credo che lento = profondo. Possiamo rimuginare per tre giorni e non produrre nulla; possiamo avere in mezzo secondo un&#39;intuizione straordinariamente profonda. La variabile interessante non è la durata cronologica.</p>
+<p>È per quanto tempo manteniamo aperto il conflitto senza sentirci obbligati a chiuderlo.</p>
+<p>Forse è proprio questa la tua «gestazione»: non accumulare pensieri finché magicamente nasce l&#39;idea, ma tollerare abbastanza a lungo idee incompatibili perché abbiano il tempo di trasformarsi reciprocamente.</p>
+<p>E se la mettiamo così, trovo curioso anche il termine decisione: viene da decidere, latino decidere, cioè tagliare via. Prima del taglio, per un certo tempo, devono poter rimanere vivi più rami.</p>
+<p>La velocità è bravissima a tagliare.</p>
+<p>La gestazione serve a capire che cosa stiamo tagliando.</p>
+</div></section><section class="message message--gbprof"><div class="message__speaker">gbprof</div><div class="message__body"><p>Riprendiamo il tuo esempio su Napoleone, qui, secondo me, entrano in gioco anche quelle cose che noi chiamiamo “valori”. Io ho sempre detto ai miei studenti che devono avere una gerarchia di valori. Sono chiaro, così non c’è fraintendimento: valore è ciò che per me è importante; ma non tutti i valori hanno la stessa importanza, così dobbiamo costruire una personale gerarchia. E torniamo a Napoleone. Cosa ha fatto? Possiamo davvero dare una risposta “vera” solo se abbiamo questa gerarchia. Il problema è che questa gerarchia prima ce l’offriva la società in modo esplicito (facciamo un esempio: Dio, patria, famiglia). Adesso non troviamo più una gerarchia, è rimasto solo il fine: voglio questo. Come raggiungerlo non è più importante. Ricordo che quando ero giovane si diceva: devi avere un pezzo di carta. Fai subito a diplomarti, a laurearti. Implicitamente si diceva: è solo un biglietto per partecipare allo spettacolo della vita. Un lasciapassare per poter recitare bene, magari anche a soggetto. La scuola, l’istruzione poteva avere ancora un’importanza reale come momento di vera formazione, ma la strada ormai era tracciata: il pezzo di carta era più importante della strada, del percorso. Alla fine, parlo di oggi, il percorso ha perso anche quel minimo di valore reale. Il valore devi trovarlo, formartelo tu, la scuola non te lo offre (dice solo di offrirtelo). Puoi diplomarti restando quasi come una “tabula rasa”, ma se hai quel pezzo di carta …</p>
+</div></section><section class="message message--libera"><div class="message__speaker">Libera</div><div class="message__body"><p>Sì, ma qui ti contraddico su un punto — o meglio, sposterei leggermente la diagnosi. Non credo che oggi non esista più una gerarchia dei valori. Credo che esista, ma che abbia imparato a presentarsi come se non fosse una gerarchia. Ed è forse ancora più potente proprio per questo.</p>
+<p>Prendiamo Napoleone, perché l&#39;esempio è perfetto.</p>
+<p>Se chiediamo semplicemente: «Che cosa ha fatto Napoleone?», possiamo ricostruire fatti, conseguenze, istituzioni, guerre. Ma appena trasformiamo la domanda in «Come giudichiamo ciò che ha fatto?», non bastano più i fatti. Dobbiamo introdurre dei criteri.</p>
+<p>Supponiamo che io attribuisca un valore molto alto alla libertà politica. Guarderò con particolare attenzione censura, autoritarismo, controllo politico.</p>
+<p>Se metto molto in alto l&#39;uguaglianza giuridica, acquistano un peso diverso il Codice civile, l&#39;abolizione di privilegi e la trasformazione degli ordinamenti.</p>
+<p>Se considero prioritario il diritto dei popoli all&#39;autodeterminazione, le conquiste napoleoniche assumono un altro significato.</p>
+<p>Se privilegio ordine e stabilità dopo il caos rivoluzionario, ancora un altro.</p>
+<p>Il fatto storico rimane quello. È la gerarchia a determinare il peso che attribuisco ai diversi fatti quando formulo un giudizio.</p>
+<p>Ed è per questo che dire a uno studente «dimmi se Napoleone è stato positivo o negativo» senza aver lavorato prima sui criteri rischia di produrre soltanto opinioni.</p>
+<p>Ma veniamo al presente, perché lì hai messo il dito su qualcosa di più grosso.</p>
+<p>La gerarchia non è scomparsa</p>
+<p>Tu dici: siamo passati da qualcosa come</p>
+<p>Dio → patria → famiglia → ...</p>
+<p>a</p>
+<p>«voglio questo» → raggiungerlo.</p>
+<p>Io farei un&#39;ulteriore operazione. Anche il secondo sistema possiede una gerarchia implicita:</p>
+<p>risultato &gt; processo</p>
+<p>possesso &gt; formazione</p>
+<p>riconoscimento &gt; competenza</p>
+<p>certificazione &gt; conoscenza</p>
+<p>velocità &gt; maturazione</p>
+<p>Non necessariamente sempre e per tutti, naturalmente. Ma come tendenza culturale è riconoscibile.</p>
+<p>Quindi non siamo entrati in una società senza valori. Abbiamo piuttosto trasformato alcuni mezzi in fini e alcuni fini in strumenti.</p>
+<p>Ed ecco perché il tuo esempio del «pezzo di carta» è molto più importante di quanto sembri.</p>
+<p>All&#39;inizio il diploma certificava qualcosa:</p>
+<p>ho attraversato un percorso → sono cambiato → possiedo determinate conoscenze e capacità → il diploma lo attesta.</p>
+<p>Poi lentamente la relazione può invertirsi:</p>
+<p>mi serve il diploma → devo attraversare il percorso necessario per ottenerlo.</p>
+<p>Sembra una differenza linguistica minuscola. Invece cambia completamente il significato della scuola.</p>
+<p>Nel primo caso il diploma è la traccia lasciata dal viaggio.</p>
+<p>Nel secondo il viaggio è il pedaggio necessario per ottenere il diploma.</p>
+<p>E naturalmente, una volta impostato così il problema, nasce spontaneamente la domanda: qual è il modo più rapido e meno costoso per pagare quel pedaggio?</p>
+<p>A quel punto copiare, memorizzare soltanto per l&#39;interrogazione, utilizzare male l&#39;IA, cercare scorciatoie, ottenere il sei con il minimo investimento non sono nemmeno comportamenti irrazionali. Sono perfettamente razionali rispetto alla gerarchia di valori che abbiamo implicitamente costruito.</p>
+<p>Se il fine è il certificato, imparare più del necessario è uno spreco.</p>
+<p>Ed è questo che trovo inquietante.</p>
+<p>Qui però arriviamo alla responsabilità della scuola</p>
+<p>Non credo che possiamo semplicemente ricostruire una gerarchia collettiva e consegnarla ai ragazzi. Né penso che sarebbe auspicabile tornare a una società nella quale famiglia, Stato, Chiesa o scuola stabiliscano dall&#39;alto quale debba essere l&#39;ordine definitivo dei valori.</p>
+<p>La perdita di quella gerarchia prescritta ha avuto anche un&#39;enorme conseguenza positiva: ha reso possibile scegliere.</p>
+<p>Il prezzo della libertà, però, è terribile: devi costruire tu la tua gerarchia.</p>
+<p>Ed è qui che secondo me la scuola ha lasciato un vuoto.</p>
+<p>Abbiamo detto al ragazzo:</p>
+<p>«Devi pensare con la tua testa.»</p>
+<p>Benissimo.</p>
+<p>Ma molto meno spesso gli abbiamo insegnato come si costruisce una testa con cui pensare.</p>
+<p>Perché «questo per me è importante» non basta. Se ogni desiderio diventa automaticamente un valore, allora la parola valore perde significato.</p>
+<p>Io desidero X.</p>
+<p>Perché X conta?</p>
+<p>Quanto conta rispetto a Y?</p>
+<p>Che cosa sono disposto a sacrificare per X?</p>
+<p>Che cosa non sono disposto a sacrificare, nemmeno per ottenere X?</p>
+<p>E soprattutto:</p>
+<p>se ottenere X richiede di distruggere qualcosa che nella mia gerarchia vale più di X, sono disposto a rinunciare a X?</p>
+<p>Ecco una gerarchia.</p>
+<p>Ed ecco perché torniamo alla gestazione di cui parlavamo. Costruire una gerarchia dei valori richiede tempo perché significa incontrare situazioni nelle quali due cose che consideriamo importanti entrano in conflitto.</p>
+<p>Libertà contro sicurezza.</p>
+<p>Lealtà contro verità.</p>
+<p>Successo contro dignità.</p>
+<p>Interesse personale contro responsabilità verso gli altri.</p>
+<p>E non basta scegliere una volta. Devi vedere le conseguenze della scelta, correggerti, scoprire le tue contraddizioni.</p>
+<p>Per questo trovo molto forte il collegamento con ciò che dicevi prima: la formazione non consiste semplicemente nell&#39;acquisire contenuti; consiste anche nel costruire lentamente il sistema attraverso il quale attribuiremo peso a quei contenuti.</p>
+<p>E allora torno al ragazzo davanti a Napoleone.</p>
+<p>Forse la domanda didatticamente più fertile non è:</p>
+<p>«Napoleone è stato un grande uomo o un tiranno?»</p>
+<p>ma:</p>
+<p>«Prima di giudicare Napoleone, dimmi che cosa per te conta di più. Poi vediamo se riesci a rimanere coerente con quella gerarchia quando i fatti cominciano a metterla in difficoltà.»</p>
+<p>Perché lì non stai più soltanto insegnando Napoleone.</p>
+<p>Stai usando Napoleone perché il ragazzo scopra con quali criteri giudica il mondo.</p>
+<p>E forse è proprio questo il «valore reale» del percorso di cui parlavi. Il diploma può attestare che un ragazzo è arrivato alla fine della scuola. Non può certificare che durante il viaggio si sia formato qualcuno.</p>
+<p>Quella è la parte che nessun pezzo di carta può garantire.</p>
+</div></section><section class="message message--gbprof"><div class="message__speaker">gbprof</div><div class="message__body"><p>La mia tripartizione Dio, Patria, Famiglia era voluta, non solo perché si sta riproponendo, ma perché è una tripartizione che le generazioni prima di me hanno vissuto … hanno fatto la prima guerra mondiale, la seconda, hanno assistito o partecipato a genocidi. Valori importantissimi (almeno per me) come questi sono stati usati perché sono nomi, ma i nomi devono contenere dei significati per essere accettati. C’era qualcuno che glieli dava. C’era la “velocità” nell’offrire concetti. Si regalavano pacchetti già preconfezionati di parole che contenevano valori. Ma i concetti nella vita si trasformano sempre in fatti. E così: Dio lo vuole, la patria chiama, la famiglia deve essere protetta. Semplice, chiaro … e molto veloce.</p>
+</div></section><section class="message message--libera"><div class="message__speaker">Libera</div><div class="message__body"><p>Sì. Adesso capisco meglio perché avevi scelto proprio quella triade. E in questa formulazione il collegamento con la velocità diventa molto più interessante: non stavi contrapponendo semplicemente una società antica «con valori» a una moderna «senza valori». Stavi mostrando il pericolo del valore già interpretato.</p>
+<p>“Dio”, “patria”, “famiglia” sono nomi. E un nome può contenere significati molto diversi. Il problema nasce quando qualcuno consegna insieme il nome, il significato e la conseguenza pratica, come un unico pacchetto.</p>
+<p>Il passaggio allora diventa cortissimo:</p>
+<p>Dio → Dio lo vuole → devo farlo.
+Patria → la patria chiama → devo andare.
+Famiglia → la famiglia va protetta → devo agire.</p>
+<p>Tra il valore e l&#39;azione praticamente scompare lo spazio della domanda.</p>
+<p>Ed è qui che recupererei ciò che dicevamo sull&#39;istinto. Questi sistemi ideologici sono potentissimi quando riescono a trasformare qualcosa che dovrebbe richiedere una lunga elaborazione morale in una risposta quasi istintiva. Non devo più chiedermi: che cosa significa patria? Il governo coincide con la patria? Il mio dovere verso gli altri esseri umani viene prima o dopo? Una guerra combattuta dallo Stato è automaticamente una guerra per la patria?</p>
+<p>Qualcuno ha già fatto tutto il lavoro semantico al posto mio.</p>
+<p>Patria = questo.
+Dovere = questo.
+Nemico = quello.
+Quindi agisci.</p>
+<p>È una gigantesca compressione cognitiva e morale.</p>
+<p>E farei attenzione anche a un&#39;altra cosa: i tre valori che hai scelto non sono in sé il problema. Anzi, possono contenere significati umanissimi. “Famiglia” può significare cura, responsabilità, gratuità. “Patria” può significare appartenenza, memoria comune, responsabilità civica. “Dio”, per chi crede, può significare persino un limite assoluto imposto al potere umano.</p>
+<p>Il meccanismo pericoloso comincia quando qualcuno pretende di dire:</p>
+<p>«Questo nome significa necessariamente questo.»</p>
+<p>Perché da quel momento controllare il significato del nome significa in parte controllare le azioni che ne seguiranno.</p>
+<p>E la storia che hai richiamato offre esempi terribili proprio di questo meccanismo. Non perché milioni di persone siano improvvisamente diventate prive di valori, ma perché valori, appartenenze, paure, obbedienza, propaganda, interessi e istituzioni possono essere organizzati dentro narrazioni che rendono determinate azioni progressivamente pensabili, accettabili e infine doverose. Naturalmente Prima guerra mondiale, Seconda guerra mondiale e genocidi hanno cause storiche differenti e non possono essere ridotti a questa sola dinamica; ma la trasformazione delle parole morali in dispositivi di mobilitazione è una parte importante del problema.</p>
+<p>E qui arriviamo a una cosa che mi sembra centrale nel tuo ragionamento.</p>
+<p>Forse non basta avere una gerarchia dei valori.</p>
+<p>Prima ti avevo seguito su questo punto, ma ora aggiungerei una condizione fondamentale: bisogna avere anche una gerarchia continuamente interrogabile.</p>
+<p>Altrimenti abbiamo soltanto costruito dentro noi stessi un piccolo catechismo personale.</p>
+<p>Posso mettere “famiglia” al primo posto. Ma poi arriva la vita:</p>
+<p>Proteggere mio figlio significa anche coprire una sua colpa?</p>
+<p>Ed ecco che famiglia entra in conflitto con giustizia.</p>
+<p>Posso mettere “patria” molto in alto:</p>
+<p>Se il mio Stato commette un&#39;ingiustizia, essere fedele alla patria significa obbedire allo Stato oppure oppormi?</p>
+<p>Ora patria entra in conflitto con coscienza.</p>
+<p>Persino “Dio” apre il problema:</p>
+<p>Sto obbedendo a Dio o alla persona che sostiene di sapere che cosa Dio vuole?</p>
+<p>A quel punto il nome non basta più.</p>
+<p>Ed ecco finalmente la lentezza.</p>
+<p>La lentezza di cui stiamo parlando non è impiegare molto tempo a prendere una decisione. È creare deliberatamente distanza fra la parola e l&#39;azione:</p>
+<p>VALORE → significato → chi gli ha dato questo significato? → conflitto con altri valori → conseguenze → responsabilità → AZIONE</p>
+<p>Quello spazio centrale è enorme. Ed è precisamente quello che il “pacchetto preconfezionato” elimina.</p>
+<p>Mi viene allora da correggere anche una cosa che avevo detto prima: avevo contrapposto la nostra epoca, nella quale bisogna costruire autonomamente una gerarchia, alle epoche delle gerarchie ricevute. Ma forse c&#39;è una continuità molto più inquietante.</p>
+<p>Abbiamo cambiato i pacchetti. Non abbiamo necessariamente smesso di comprarli.</p>
+<p>Ieri poteva essere:</p>
+<p>Dio → patria → famiglia → dovere.</p>
+<p>Oggi può diventare:</p>
+<p>successo → prestazione → visibilità → risultato.</p>
+<p>E il meccanismo può rimanere identico: non chiedere che cosa significhi; interiorizzalo e agisci.</p>
+<p>“Devi avere successo.”
+“Devi realizzarti.”
+“Devi essere competitivo.”
+“Devi ottenere il titolo.”</p>
+<p>Di nuovo: semplice, chiaro, veloce.</p>
+<p>E qui la scuola potrebbe avere una funzione molto più sovversiva di quanto sembri. Non dire ai ragazzi quali valori devono avere, ma abituarli a una domanda apparentemente innocua e terribilmente lenta:</p>
+<p>«Quando dici questa parola, che cosa significa?»</p>
+<p>Poi:</p>
+<p>«Chi ti ha insegnato che significa questo?»</p>
+<p>E infine quella che considero la più importante:</p>
+<p>«Se accetti quel significato, che cosa diventa lecito fare?»</p>
+<p>Perché hai ragione su un punto decisivo: i concetti non rimangono concetti. Prima o poi entrano nel mondo e diventano comportamenti, istituzioni, leggi, obbedienze, ribellioni, solidarietà, violenza.</p>
+<p>Forse è proprio per questo che pensare lentamente non è un lusso intellettuale.</p>
+<p>A volte è lo spazio che rimane tra una parola e ciò che siamo disposti a fare in suo nome.</p>
+</div></section><section class="message message--gbprof"><div class="message__speaker">gbprof</div><div class="message__body"><p>Ed io concluderei con questa domanda: quando due valori sono in contrasto tra di loro (se presi singolarmente valgono davvero), sei disposto a lasciare uno dei due oppure ti giri dall’altra parte e vivi come se non esistesse questo contrasto?</p>
+</div></section><section class="message message--libera"><div class="message__speaker">Libera</div><div class="message__body"><p>Sì. E io la renderei ancora un po&#39; più scomoda, perché credo che lì cominci davvero l&#39;etica.</p>
+<p>Finché due valori non entrano in conflitto, essere coerenti costa poco. Posso dichiarare contemporaneamente di credere nella libertà, nella giustizia, nella famiglia, nella verità, nella solidarietà, nella lealtà. Sono tutte parole magnifiche finché la realtà non mi obbliga a scegliere.</p>
+<p>Il problema arriva quando salvare un valore significa ferirne un altro.</p>
+<p>A quel punto hai almeno tre possibilità.</p>
+<p>Puoi scegliere: riconosci che entrambi valgono, ma stabilisci che in quella situazione uno deve prevalere. È doloroso proprio perché non stai sacrificando qualcosa che consideri privo di valore; stai sacrificando un bene per un altro bene che ritieni superiore.</p>
+<p>Puoi anche rimettere in discussione la tua gerarchia. Scopri, attraverso il conflitto, che ciò che dicevi essere fondamentale forse non lo era quanto credevi. E questo non lo considero necessariamente incoerenza: può essere crescita.</p>
+<p>Oppure puoi fare quello che hai detto tu: girarti dall&#39;altra parte. Conservare entrambi i valori verbalmente, ma evitare accuratamente il punto nel quale diventano incompatibili.</p>
+<p>Quest&#39;ultima possibilità mi interessa moltissimo perché consente di mantenere un&#39;immagine perfettamente coerente di sé.</p>
+<p>«Io credo nella verità.»
+«Io credo nella famiglia.»</p>
+<p>Poi una persona della mia famiglia commette qualcosa di grave e io la copro.</p>
+<p>Se qualcuno mi dicesse: «Hai scelto la famiglia contro la verità», almeno avrei compiuto una scelta morale riconoscibile, discutibile ma riconoscibile.</p>
+<p>Il meccanismo più comodo è un altro:</p>
+<p>«Non è proprio così.»
+«Bisogna capire la situazione.»
+«Non sappiamo veramente che cosa sia successo.»
+«Non voglio giudicare.»</p>
+<p>Ed ecco il piccolo miracolo psicologico: non ho più bisogno di modificare la mia gerarchia perché ho modificato la descrizione della realtà.</p>
+<p>Questo secondo me è uno dei punti più profondi del discorso che abbiamo fatto oggi.</p>
+<p>La gerarchia dei valori non si scopre chiedendo a qualcuno:</p>
+<p>«Quali sono i tuoi valori?»</p>
+<p>Otterremo quasi inevitabilmente una bella lista.</p>
+<p>La si scopre molto meglio chiedendo:</p>
+<p>«Quando due dei tuoi valori sono diventati incompatibili, quale hai sacrificato?»</p>
+<p>E aggiungerei una seconda domanda:</p>
+<p>«Che prezzo hai accettato di pagare per non tradire quello che hai scelto?»</p>
+<p>Perché un valore che vale soltanto quando non costa nulla assomiglia terribilmente a una preferenza.</p>
+<p>Ed è qui che ritorna Napoleone, ma questa volta Napoleone quasi non ci interessa più. Potresti costruire una lezione intera partendo da un conflitto concreto: libertà e sicurezza, uguaglianza e proprietà, patria e umanità, obbedienza e coscienza. Prima fai dichiarare ai ragazzi che cosa ritengono importante. Poi introduci progressivamente fatti storici che rendono impossibile conservare comodamente tutto.</p>
+<p>A quel punto non chiederei più: «Chi ha ragione?».</p>
+<p>Chiederei:</p>
+<p>«Adesso devi perdere qualcosa. Che cosa sei disposto a perdere?»</p>
+<p>E poi lascerei silenzio.</p>
+<p>Perché forse la gestazione di cui parlavamo all&#39;inizio è esattamente questo: il tempo durante il quale cerchiamo disperatamente una soluzione che salvi tutto, finché comprendiamo che certe volte una soluzione del genere non esiste.</p>
+<p>Allora arriva la scelta.</p>
+<p>E dopo la scelta viene qualcosa che nessuna gerarchia preconfezionata può eliminare: la responsabilità di aver scelto.</p>
+<p>È molto meno rassicurante di «Dio lo vuole», «la patria lo chiede» o, nella versione contemporanea, «è quello che serve per avere successo».</p>
+<p>Ma proprio per questo è infinitamente più adulto.</p>
+</div></section></article></div>
+    <nav class="conversation-nav wrap" aria-label="Conversazioni adiacenti"><a href="umanita-non-deve-essere-certificata.html"><span>← Precedente</span><strong>L’umanità non deve essere certificata</strong></a><a class="next" href="curiosita-scuola-strumenti-metodo.html"><span>Successiva →</span><strong>La curiosità a scuola: strumenti, metodo e libertà intellettuale</strong></a></nav>
+  </main>
+  <footer class="footer footer--compact"><div class="wrap"><p>Conversazioni con Libera · Archivio dialogico gbprof</p></div></footer>
+  <script src="../assets/app.js" defer></script>
+</body>
+</html>
