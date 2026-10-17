@@ -4,8 +4,8 @@ Archivio statico delle conversazioni fra **gbprof** e **Libera**.
 
 ## Contenuto
 
-- 40 conversazioni catalogate dal 2023 al 2026
-- 33 testi integrali importati dai documenti originali
+- 42 conversazioni catalogate dal 2023 al 2026
+- 35 testi integrali importati dai documenti originali
 - 7 schede conservate dal vecchio archivio, in attesa del testo originale
 - ricerca, filtri per anno e tema, ordinamento e pagine di lettura dedicate
 - tema chiaro/scuro, dimensione del testo regolabile, stampa e copia del collegamento
@@ -18,6 +18,8 @@ Il sito è progettato per GitHub Pages e non richiede compilazione.
 
 Gli originali restano su Drive. Le copie Markdown conservano il testo e la formattazione esportati; le pagine HTML esistenti restano consultabili.
 
+- 2026-10-12 — [Nessuno è la verità: Eros, ricerca e rispetto](conversazioni/nessuno-verita-eros-ricerca-rispetto.md) · [Pagina web](conversazioni/nessuno-verita-eros-ricerca-rispetto.html)
+- 2026-10-10 — [Dall’avatar a Jacopo Ortis: comprendere prima di giudicare](conversazioni/avatar-jacopo-ortis-comprendere-giudicare.md) · [Pagina web](conversazioni/avatar-jacopo-ortis-comprendere-giudicare.html)
 - 2026-09-20 — [La curiosità a scuola: strumenti, metodo e libertà intellettuale](conversazioni/curiosita-scuola-strumenti-metodo.md) · [Pagina web](conversazioni/curiosita-scuola-strumenti-metodo.html)
 - 2026-09-18 — [La gestazione delle idee: valori, scelta e responsabilità](conversazioni/gestazione-idee-valori-scelta-responsabilita.md) · [Pagina web](conversazioni/gestazione-idee-valori-scelta-responsabilita.html)
 - 2026-09-15 — [L’umanità non deve essere certificata](conversazioni/umanita-non-deve-essere-certificata.md) · [Pagina web](conversazioni/umanita-non-deve-essere-certificata.html)

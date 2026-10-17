@@ -199,6 +199,36 @@
       "initialMatch": "new-conversation",
       "status": "synced",
       "conversion": "google-native-markdown-export-v1"
+    },
+    "1umhi0QICM8XBtYIeSahlWnDkJLy73d8PMCc5GkiW9sg": {
+      "title": "Dall’avatar a Jacopo Ortis: comprendere prima di giudicare",
+      "source": "10-10-26 - avatar ai - dialogo integrale",
+      "mimeType": "application/vnd.google-apps.document",
+      "github": "conversazioni/avatar-jacopo-ortis-comprendere-giudicare.md",
+      "html": "conversazioni/avatar-jacopo-ortis-comprendere-giudicare.html",
+      "conversationDate": "2026-10-10",
+      "lastSync": "2026-10-17T06:12:52+00:00",
+      "driveModified": "2026-10-10T18:24:40.490Z",
+      "sourceHash": "675a2a36e23871c6f835ff35d090869972edb5cc4ea438e5844f2ae9372cec7f",
+      "markdownHash": "dbf14b54db1979c7489a07ec25ce8af2ed2c2a3625dd21dea78e313731fe27f2",
+      "initialMatch": "new-conversation",
+      "status": "synced",
+      "conversion": "google-native-markdown-export-v1"
+    },
+    "1KSow6vuEOx-uP5t5sUaqQc4h1_omVE3841RpwvFKxpo": {
+      "title": "Nessuno è la verità: Eros, ricerca e rispetto",
+      "source": "12-10-2026",
+      "mimeType": "application/vnd.google-apps.document",
+      "github": "conversazioni/nessuno-verita-eros-ricerca-rispetto.md",
+      "html": "conversazioni/nessuno-verita-eros-ricerca-rispetto.html",
+      "conversationDate": "2026-10-12",
+      "lastSync": "2026-10-17T06:12:52+00:00",
+      "driveModified": "2026-10-12T15:08:35.899Z",
+      "sourceHash": "9aa9024f77f52ffcaa83c04bf92b21c26b133e1383b46024f3e17b6a4c28ed90",
+      "markdownHash": "da4dca253c1d0857fb5f0d625f982563faa97a8dc6415ed3f5adef9e539d208c",
+      "initialMatch": "new-conversation",
+      "status": "synced",
+      "conversion": "google-native-markdown-export-v1"
     }
   },
   "historicalHtmlOutsideSourceFolder": [
