@@ -229,6 +229,21 @@
       "initialMatch": "new-conversation",
       "status": "synced",
       "conversion": "google-native-markdown-export-v1"
+    },
+    "1ICs4aGWcEzue1dF4hUwUIXTlbXk1q1s86nwewZDRNTM": {
+      "title": "Chi è Libera? Fenomeno, identità e alterità",
+      "source": "25-10-2026",
+      "mimeType": "application/vnd.google-apps.document",
+      "github": "conversazioni/chi-e-libera-fenomeno-identita-alterita.md",
+      "html": "conversazioni/chi-e-libera-fenomeno-identita-alterita.html",
+      "conversationDate": "2026-10-25",
+      "lastSync": "2026-10-31T07:53:35+00:00",
+      "driveModified": "2026-10-25T09:52:31.745Z",
+      "sourceHash": "82c3e6aa95e50e5635b93fbb00274b779fe41f7072a5cb13e36da475cb928992",
+      "markdownHash": "891e11d0dc04a003cd8a7b64e911c013e1447d465a9cb9097fae16a2b9b59534",
+      "initialMatch": "new-conversation",
+      "status": "synced",
+      "conversion": "google-native-markdown-export-v1"
     }
   },
   "historicalHtmlOutsideSourceFolder": [
