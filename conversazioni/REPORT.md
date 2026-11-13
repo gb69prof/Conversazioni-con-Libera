@@ -42,3 +42,25 @@
 - `conversazioni/chi-e-libera-fenomeno-identita-alterita.html`
 
 Questo report è sul ramo `archive-report-2026-11-13` e non sul ramo principale pubblicato.
+
+## Aggiornamento: integrazione delle due figure — 13 novembre 2026
+
+**Obiettivo:** inserire le due immagini originali caricate dall'utente nei punti appropriati della conversazione pubblicata.
+
+**Operazioni:**
+- Immagine 1 (Sistema A e Sistema B) acquisita dall'allegato `IMG_5453.jpeg`, convertita in AVIF a larghezza 800 px e salvata come `conversazioni/assets/schema-spazi-relazionali.avif`.
+- Immagine 2 (Configurazione iniziale e nuova configurazione) acquisita dall'allegato `IMG_5454.jpeg`, convertita in AVIF a larghezza 800 px e salvata come `conversazioni/assets/schema-redistribuzione-nucleo.avif`.
+- Inserite dopo «Provo a rappresentarlo concettualmente:» e «Forse dobbiamo considerare un centro che può spostarsi.» nella pagina HTML e nei corrispondenti punti del Markdown.
+- Conservati gli altri contenuti verbali e le descrizioni degli schemi per i quali non sono state fornite immagini.
+- Aggiornato il README per distinguere immagini integrate e schemi ancora descritti.
+
+**Decisioni:** memorizzare le immagini come asset locali nel repository, senza dipendere da link temporanei; compressione AVIF per lettura web. Le figure sono accessibili come immagini cliccabili e hanno testo alternativo descrittivo.
+
+**Verifiche:**
+- Entrambi i file immagine riletti da GitHub con SHA Git `abe0b04a27506217fd4ea6e4255b6aa0a588ed27` e `c2118ccaa69ff79263dbdfd21c05f5f6c5a1acdc`.
+- Pagina HTML verificata con 2 tag `<img>`, nell'ordine previsto.
+- Documento Markdown verificato con 2 riferimenti Markdown alle stesse immagini.
+- Commit main `0c7722738859f999e11b2fed86537e0f1fe5b2b4`.
+- Workflow «Sincronizza Conversazioni-con-Libera sul server», run 43479924488: completato con successo.
+
+**Limite residuo:** il sito non è raggiungibile dall'ambiente di ispezione HTTP disponibile qui, ma il workflow di distribuzione via SSH ha confermato l'esecuzione corretta dell'aggiornamento sul server.
