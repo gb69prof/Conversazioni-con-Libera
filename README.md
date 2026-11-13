@@ -4,8 +4,8 @@ Archivio statico delle conversazioni fra **gbprof** e **Libera**.
 
 ## Contenuto
 
-- 43 conversazioni catalogate dal 2023 al 2026
-- 36 testi integrali importati dai documenti originali
+- 44 conversazioni catalogate dal 2023 al 2026
+- 37 testi integrali conservati, inclusa la trascrizione del dialogo corrente
 - 7 schede conservate dal vecchio archivio, in attesa del testo originale
 - ricerca, filtri per anno e tema, ordinamento e pagine di lettura dedicate
 - tema chiaro/scuro, dimensione del testo regolabile, stampa e copia del collegamento
@@ -38,3 +38,9 @@ Gli originali restano su Drive. Le copie Markdown conservano il testo e la forma
 Registro: [.sync/drive-sync.json](.sync/drive-sync.json). Procedura: [.sync/README.md](.sync/README.md). Il rapporto `dati/import-report.json` descrive la prima importazione del 13 agosto 2026 e non è il registro corrente.
 
 
+
+## Conversazione trascritta direttamente dalla chat
+
+- 2026-11-13 — [La gravità della personalità](conversazioni/la-gravita-della-personalita-2026-11-13.md) · [Pagina web](conversazioni/la-gravita-della-personalita-2026-11-13.html)
+
+La conversazione del 13 novembre è stata trascritta dai messaggi presenti nel contesto ChatGPT: gli interventi testuali sono conservati in sequenza, mentre gli schemi visivi sono descritti e segnalati editorialmente. Questa copia non è un'esportazione firmata dell'originale. Il testo originale in chat resta la fonte primaria.
