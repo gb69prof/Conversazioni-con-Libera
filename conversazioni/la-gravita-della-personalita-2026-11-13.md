@@ -812,7 +812,7 @@ Per la prima acquisizione:
 3. Quando ricevi l'email di OpenAI, scarica il file ZIP.
 4. Caricalo qui nella conversazione.
 
-Il file contiene la cronologia esportabile, generalmente con un documento JSON dal quale possiamo ricavare separatamente i dialoghi. L'esportazione può richiedere fino a sette giorni e il collegamento per scaricarla scade dopo 24 ore.
+Il file contiene la cronologia esportabile, generalmente con un `conversations.json`, dal quale possiamo ricavare separatamente i dialoghi. L'esportazione può richiedere fino a sette giorni e il collegamento per scaricarla scade dopo 24 ore.
 
 ### E dopo la prima volta?
 
