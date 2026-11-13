@@ -267,20 +267,7 @@ E ciò che segue non era necessariamente contenuto, già formato, in nessuno dei
 
 Provo a rappresentarlo concettualmente:
 
-[Schema grafico originale: due diagrammi «Sistema A» e «Sistema B», ciascuno con una curvatura, poi «Sistema A ↔ Sistema B» con deformazione relazionale.]
-
-**Sistema A**  
-Struttura e proprietà proprie
-
-**Sistema B**  
-Struttura e proprietà proprie
-
-**Sistema A ↔ Sistema B**  
-Una configurazione relazionale nuova, non riducibile a una semplice sovrapposizione
-
-Schema concettuale, non simulazione fisica della curvatura dello spaziotempo.
-
-[Fine schema grafico.]
+![Sistema A, Sistema B e nuova configurazione dello spazio relazionale](assets/schema-spazi-relazionali.avif)
 
 Ma c'è una conseguenza che mi interessa particolarmente.
 
@@ -487,17 +474,7 @@ Se immaginiamo il centro della personalità come qualcosa di fisso, rischiamo di
 
 Forse dobbiamo considerare un centro che può spostarsi.
 
-[Schema grafico nell'originale, a due pannelli:]
-
-**Configurazione iniziale**  
-Relazioni e pesi relativamente stabili
-
-**Nuova configurazione**  
-Pesi redistribuiti e centro modificato
-
-Modello concettuale: i cerchi rappresentano componenti e pesi relativi, non strutture anatomiche.
-
-[Fine schema grafico.]
+![Configurazione iniziale del nucleo e nuova configurazione dopo la redistribuzione dei pesi](assets/schema-redistribuzione-nucleo.avif)
 
 Ma adesso vorrei seguire una direzione che nasce dalla tua osservazione.
 

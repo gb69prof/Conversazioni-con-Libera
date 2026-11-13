@@ -43,4 +43,4 @@ Registro: [.sync/drive-sync.json](.sync/drive-sync.json). Procedura: [.sync/READ
 
 - 2026-11-13 — [La gravità della personalità](conversazioni/la-gravita-della-personalita-2026-11-13.md) · [Pagina web](conversazioni/la-gravita-della-personalita-2026-11-13.html)
 
-La conversazione del 13 novembre è stata trascritta dai messaggi presenti nel contesto ChatGPT: gli interventi testuali sono conservati in sequenza, mentre gli schemi visivi sono descritti e segnalati editorialmente. Questa copia non è un'esportazione firmata dell'originale. Il testo originale in chat resta la fonte primaria.
+La conversazione del 13 novembre è stata trascritta dai messaggi presenti nel contesto ChatGPT: gli interventi testuali sono conservati in sequenza, mentre le due immagini degli schemi fornite in seguito dall'autore sono state inserite nelle rispettive risposte; gli altri elementi visivi sono descritti e segnalati editorialmente. Questa copia non è un'esportazione firmata dell'originale. Il testo originale in chat resta la fonte primaria.
