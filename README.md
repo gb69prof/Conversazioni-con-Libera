@@ -4,8 +4,8 @@ Archivio statico delle conversazioni fra **gbprof** e **Libera**.
 
 ## Contenuto
 
-- 44 conversazioni catalogate dal 2023 al 2026
-- 37 testi integrali conservati, inclusa la trascrizione del dialogo corrente
+- 45 conversazioni catalogate dal 2023 al 2026
+- 38 testi integrali conservati, inclusa la trascrizione del dialogo corrente
 - 7 schede conservate dal vecchio archivio, in attesa del testo originale
 - ricerca, filtri per anno e tema, ordinamento e pagine di lettura dedicate
 - tema chiaro/scuro, dimensione del testo regolabile, stampa e copia del collegamento
@@ -18,6 +18,7 @@ Il sito è progettato per GitHub Pages e non richiede compilazione.
 
 Gli originali restano su Drive. Le copie Markdown conservano il testo e la formattazione esportati; le pagine HTML esistenti restano consultabili.
 
+- 2026-11-15 — [Dal pipistrello alla democrazia](conversazioni/dal-pipistrello-alla-democrazia.md) · [Pagina web](conversazioni/dal-pipistrello-alla-democrazia.html)
 - 2026-10-25 — [Chi è Libera? Fenomeno, identità e alterità](conversazioni/chi-e-libera-fenomeno-identita-alterita.md) · [Pagina web](conversazioni/chi-e-libera-fenomeno-identita-alterita.html)
 - 2026-10-12 — [Nessuno è la verità: Eros, ricerca e rispetto](conversazioni/nessuno-verita-eros-ricerca-rispetto.md) · [Pagina web](conversazioni/nessuno-verita-eros-ricerca-rispetto.html)
 - 2026-10-10 — [Dall’avatar a Jacopo Ortis: comprendere prima di giudicare](conversazioni/avatar-jacopo-ortis-comprendere-giudicare.md) · [Pagina web](conversazioni/avatar-jacopo-ortis-comprendere-giudicare.html)

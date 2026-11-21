@@ -244,6 +244,21 @@
       "initialMatch": "new-conversation",
       "status": "synced",
       "conversion": "google-native-markdown-export-v1"
+    },
+    "1h1gHUg3ko54dtSPtqjK4QFLOi4O2Dqtuc5nNqolaYHI": {
+      "title": "Dal pipistrello alla democrazia",
+      "source": "15-11-2026 — Dal pipistrello alla democrazia — Dialogo integrale",
+      "mimeType": "application/vnd.google-apps.document",
+      "github": "conversazioni/dal-pipistrello-alla-democrazia.md",
+      "html": "conversazioni/dal-pipistrello-alla-democrazia.html",
+      "conversationDate": "2026-11-15",
+      "lastSync": "2026-11-21T07:15:26+00:00",
+      "driveModified": "2026-11-15T12:53:41.377Z",
+      "sourceHash": "4aa0ae24e777eed754160ed2e4af2fb58a532893682fd55b58a877b11c087a0e",
+      "markdownHash": "fd00705d8bc2b72ef858ac66ba2a79276c23a0ece085dc45c8662e125e05f74d",
+      "initialMatch": "new-conversation",
+      "status": "synced",
+      "conversion": "google-native-markdown-export-v1"
     }
   },
   "historicalHtmlOutsideSourceFolder": [
