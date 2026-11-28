@@ -259,6 +259,21 @@
       "initialMatch": "new-conversation",
       "status": "synced",
       "conversion": "google-native-markdown-export-v1"
+    },
+    "14MmkjVOV9VbfHyhusaRPOcwYypWDuTNUAElKm5o-s0k": {
+      "title": "Arte preistorica: irrazionalità, impulso e forma",
+      "source": "28-11-26",
+      "mimeType": "application/vnd.google-apps.document",
+      "github": "conversazioni/arte-preistorica-irrazionalita-impulso-forma.md",
+      "html": "conversazioni/arte-preistorica-irrazionalita-impulso-forma.html",
+      "conversationDate": "2026-11-28",
+      "lastSync": "2026-11-28T07:36:11+00:00",
+      "driveModified": "2026-11-27T23:57:17.804Z",
+      "sourceHash": "8ab8fc156e515d78a192e02d8f400be2d0100d491ad4b000ee386e68573e4d88",
+      "markdownHash": "f40156c4355fc500ab484b9f713bcfad0713ed2da34f5e4a771c6600780639a7",
+      "initialMatch": "new-conversation",
+      "status": "synced",
+      "conversion": "google-native-markdown-export-v1"
     }
   },
   "historicalHtmlOutsideSourceFolder": [
